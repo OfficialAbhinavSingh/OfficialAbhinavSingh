@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on UI/UX Design<br>🌱 I’m currently learning Frontend Development<br>💬 Open to discussions<br>
+🔭 I’m currently learning about AI/ML <br>💬 Open to discussions<br>
 
 
 ## 🌐 Socials:
