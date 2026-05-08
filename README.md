@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently learning about AI/ML <br>💬 Open to discussions<br>
+CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 
 ## 🌐 Socials:
