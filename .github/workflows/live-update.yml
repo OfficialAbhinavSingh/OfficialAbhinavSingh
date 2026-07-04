@@ -3,6 +3,8 @@ name: live-update
 on:
   schedule:
     - cron: "0 0 * * *"
+  # Commits made with the default GITHUB_TOKEN don't retrigger push events,
+  # so the activity job's own commit to main doesn't loop this workflow.
   push:
     branches: [main]
   workflow_dispatch: {}
