@@ -33,6 +33,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@v2.1.0
+      - uses: jamesgeorge007/github-activity-readme@v0.5.0
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
