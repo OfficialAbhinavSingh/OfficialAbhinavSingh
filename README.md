@@ -42,11 +42,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🔒 Closed issue [#7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/7) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-2. 🎉 Merged PR [#8](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/8) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-3. 🗣 Commented on [#8](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/8#issuecomment-4887559295) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-4. 💪 Opened PR [#8](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/8) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-5. 🎉 Merged PR [#1](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/1) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+1. 🗣 Commented on [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9#issuecomment-4896027642) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+2. ℹ️ Assigned PR [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+3. 💪 Opened PR [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+4. 💪 Opened PR [#9](https://github.com/mwt5345/DeepLenseSim/pull/9) in [mwt5345/DeepLenseSim](https://github.com/mwt5345/DeepLenseSim)
+5. 🔒 Closed issue [#7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/7) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
