@@ -42,11 +42,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#12](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/12) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-2. 💪 Opened PR [#12](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/12) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-3. 🗣 Commented on [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9#issuecomment-4896027642) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-4. ℹ️ Assigned PR [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-5. 💪 Opened PR [#9](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/9) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+1. 💪 Opened PR [#22](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/22) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+2. 🎉 Merged PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+3. 🔒 Closed issue [#14](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/14) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+4. ℹ️ Assigned PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+5. 💪 Opened PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
