@@ -42,11 +42,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#22](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/22) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-2. 🎉 Merged PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-3. 🔒 Closed issue [#14](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/14) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-4. ℹ️ Assigned PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-5. 💪 Opened PR [#21](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/21) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+1. 🗣 Commented on [#1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pull/1#issuecomment-4929002214) in [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents)
+2. 💪 Opened PR [#1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pull/1) in [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents)
+3. 🗣 Commented on [#26](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/26#issuecomment-4928357004) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+4. 🗣 Commented on [#18](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/18#issuecomment-4928261668) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+5. 🗣 Commented on [#26](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/26#issuecomment-4928242089) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
