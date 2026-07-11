@@ -1,28 +1,48 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="600px" height="376px" font-family="'Fira Code',Consolas,monospace" font-size="14px">
-<rect width="600px" height="376px" fill="#fff8f4" rx="14"/>
-<text fill="#f0732d" xml:space="preserve">
-<tspan x="24" y="34">       /\ </tspan>
-<tspan x="24" y="58">      /  \ </tspan>
-<tspan x="24" y="82">     /\   \ </tspan>
-<tspan x="24" y="106">    /      \ </tspan>
-<tspan x="24" y="130">   /   ,,   \ </tspan>
-<tspan x="24" y="154">  /   |  |   \ </tspan>
-<tspan x="24" y="178"> /_-''    ''-_\ </tspan>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="780px" height="388px" font-family="'Fira Code',Consolas,monospace">
+<rect width="780px" height="388px" fill="#fff8f4" rx="16"/>
+<text fill="#f0732d" xml:space="preserve" font-size="9px">
+<tspan x="18" y="30">  .*#####-.....:*###%%######%%#=.........:+####%*:..</tspan>
+<tspan x="18" y="40">.::=@@@@@@*-----%@@@%*=-:--==+*=:-------+@@@@@@@+-::</tspan>
+<tspan x="18" y="50">::::-#@@@@@%=-----:.             .:---=#@@@@@@*-::::</tspan>
+<tspan x="18" y="60">=:::::+@@@@@@*-.           .        .+@@@@@@#=--=*%#</tspan>
+<tspan x="18" y="70">@%+-:::-#@@@@@.         ....         -@@@@@+-=+%@@@@</tspan>
+<tspan x="18" y="80">@@@@*=-:-+@@@-       :-=+****+++=-:. .#@@+-=%@@@@@@@</tspan>
+<tspan x="18" y="90">@@@@@@%+-:-#%:   .-+#%@@@@@@@@@@%#+=. =*-..#@@@@@%+-</tspan>
+<tspan x="18" y="100">*%@@@@@@@#*+#:..:=#%%@@@@@@@@@@%%##+-:-+-..-#@@#=---</tspan>
+<tspan x="18" y="110">%#%@@@@@@@##@=.-+*#%%@@@@@@@@@@@%%##*-#@#=-+*##**%@%</tspan>
+<tspan x="18" y="120">#%%%%%@@%*+#@#-+#*==++++*%%%#+++=--=#*@@%#*#%@%#@@@@</tspan>
+<tspan x="18" y="130">+%@@%#%%#==%@@+****+=---=**++=--=+==+*%%#**%@@@%#%@@</tspan>
+<tspan x="18" y="140">*@@@@@@@@%*@@%#*+#%**+**#+#*++**+#++*****++%@@@%+=+=</tspan>
+<tspan x="18" y="150">@@@@@@@@@@*@@%####@%%%%#*#@@*+####%%##**+==*%@%#=-=-</tspan>
+<tspan x="18" y="160">@@@@@%@@@#*@@%%%%%##%##*#%@@%**###%%%#**+--*#%#*----</tspan>
+<tspan x="18" y="170">%@@%***##*+%@@%#%%@@@@@%##%%*##%@@@%%#**=--*%%%*===-</tspan>
+<tspan x="18" y="180">=+++==+**+=*@@@%####****=-=-:=*###%%%%#+=:-#@@@%*+++</tspan>
+<tspan x="18" y="190">--====++==-+%@@@####=-=+*****++-:*##@@@#=-=%@@@%#***</tspan>
+<tspan x="18" y="200">-===--=====+%@@@%*###%%%%%##%#***##%@@@@#=+@@@@%****</tspan>
+<tspan x="18" y="210">-=++==+*##*%@@@*=++*#%%%@%%%%%###*+@@@@@@##@@@@%++==</tspan>
+<tspan x="18" y="220">:+*#**#%%@@@@@= .*=-=+##%@@%%%#*+= -@@@@@@@@@@@%---:</tspan>
+<tspan x="18" y="230">=#%@@@@@@@@@@+  =**+=::.::-======:  =@@@@@@@@@@@=--:</tspan>
+<tspan x="18" y="240">#@@@@@@@@@@@%.  -*****+=------==-    +@@@@@@@@@@##*+</tspan>
+<tspan x="18" y="250">@@@@@@@@@@@@+    =###****+=====-     *%%@@@@@@@@@@%#</tspan>
+<tspan x="18" y="260">@@@@@@@@@@@@*     -*######**+=:.    .*%%%@@@@@@@@@@#</tspan>
+<tspan x="18" y="270">@@@@@@@@@@@@%:     .-*%@%##*+=-.    :#%@%%@@@%%%@@@@</tspan>
+<tspan x="18" y="280">@@@%%@@@@@@@@+       .-*%%%#*=.     :#@@%%#*+#%%%%%%</tspan>
+<tspan x="18" y="290">@@@%##%@@@@@@#.      ...:===-.      -%@@%%*+#%%%%%%%</tspan>
 </text>
-<text fill="#111111" xml:space="preserve">
-<tspan x="260" y="34" fill="#f0732d" font-weight="bold">abhinav@github</tspan>
-<tspan x="260" y="58" fill="#11111199">----------------------------</tspan>
-<tspan x="260" y="82"><tspan fill="#f0732d">OS</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Arch Linux</tspan></tspan>
-<tspan x="260" y="106"><tspan fill="#f0732d">Kernel</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Linux (Zen)</tspan></tspan>
-<tspan x="260" y="130"><tspan fill="#f0732d">WM</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Hyprland</tspan></tspan>
-<tspan x="260" y="154"><tspan fill="#f0732d">Shell</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">zsh</tspan></tspan>
-<tspan x="260" y="178"><tspan fill="#f0732d">Languages</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Python · TS · Rust · JS</tspan></tspan>
-<tspan x="260" y="212" fill="#11111199">----------------------------</tspan>
-<tspan x="260" y="236"><tspan fill="#f0732d">Member since</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">11 months</tspan></tspan>
-<tspan x="260" y="260"><tspan fill="#f0732d">Repos</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">17</tspan></tspan>
-<tspan x="260" y="284"><tspan fill="#f0732d">Stars</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">7</tspan></tspan>
-<tspan x="260" y="308"><tspan fill="#f0732d">Followers</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">19</tspan></tspan>
-<tspan x="260" y="332"><tspan fill="#f0732d">Commits (past year)</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">207</tspan></tspan>
+<text fill="#111111" xml:space="preserve" font-size="15px">
+<tspan x="330" y="30" fill="#f0732d" font-weight="bold">abhinav@github</tspan>
+<tspan x="330" y="55" fill="#11111199">------------------------------</tspan>
+<tspan x="330" y="80"><tspan fill="#f0732d">OS</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Arch Linux</tspan></tspan>
+<tspan x="330" y="105"><tspan fill="#f0732d">Kernel</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Linux (Zen)</tspan></tspan>
+<tspan x="330" y="130"><tspan fill="#f0732d">WM</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Hyprland</tspan></tspan>
+<tspan x="330" y="155"><tspan fill="#f0732d">Shell</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">zsh</tspan></tspan>
+<tspan x="330" y="180"><tspan fill="#f0732d">Languages</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Python · TS · Rust · JS</tspan></tspan>
+<tspan x="330" y="212" fill="#11111199">------------------------------</tspan>
+<tspan x="330" y="238"><tspan fill="#f0732d">Member since</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">11 months</tspan></tspan>
+<tspan x="330" y="270" fill="#11111199">------------------------------</tspan>
+<tspan x="330" y="295"><tspan fill="#f0732d">Repos</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">17</tspan><tspan fill="#11111199"> {</tspan><tspan fill="#f0732d">Contributed</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">7</tspan><tspan fill="#11111199">} | </tspan><tspan fill="#f0732d">Stars</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">7</tspan></tspan>
+<tspan x="330" y="320"><tspan fill="#f0732d">Commits (past yr)</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">207</tspan><tspan fill="#11111199"> | </tspan><tspan fill="#f0732d">Followers</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">19</tspan></tspan>
+<tspan x="330" y="345"><tspan fill="#f0732d">Top Language</tspan><tspan fill="#11111199">: </tspan><tspan fill="#111111">Python</tspan></tspan>
 </text>
 </svg>

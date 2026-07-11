@@ -22,9 +22,17 @@ query($login: String!) {
   user(login: $login) {
     createdAt
     followers { totalCount }
+    repositoriesContributedTo(includeUserRepositories: false, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
+      totalCount
+    }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
       totalCount
-      nodes { stargazerCount }
+      nodes {
+        stargazerCount
+        languages(first: 1, orderBy: {field: SIZE, direction: DESC}) {
+          nodes { name }
+        }
+      }
     }
     contributionsCollection {
       totalCommitContributions
@@ -66,14 +74,38 @@ def member_since(created_at: str) -> str:
     return ", ".join(parts)
 
 
-ASCII_ARCH = [
-    r"       /\ ",
-    r"      /  \ ",
-    r"     /\   \ ",
-    r"    /      \ ",
-    r"   /   ,,   \ ",
-    r"  /   |  |   \ ",
-    r" /_-''    ''-_\ ",
+# ASCII rendering of Abhinav's own GitHub avatar (avatars.githubusercontent.com/u/221158347),
+# generated once via a luminance->charset density map (see scripts/photo_to_ascii.py) and
+# baked in here — the photo doesn't change on a schedule, so there's no need to re-fetch and
+# re-process an image on every CI run just to reproduce the same art.
+ASCII_PORTRAIT = [
+    r"  .*#####-.....:*###%%######%%#=.........:+####%*:..",
+    r".::=@@@@@@*-----%@@@%*=-:--==+*=:-------+@@@@@@@+-::",
+    r"::::-#@@@@@%=-----:.             .:---=#@@@@@@*-::::",
+    r"=:::::+@@@@@@*-.           .        .+@@@@@@#=--=*%#",
+    r"@%+-:::-#@@@@@.         ....         -@@@@@+-=+%@@@@",
+    r"@@@@*=-:-+@@@-       :-=+****+++=-:. .#@@+-=%@@@@@@@",
+    r"@@@@@@%+-:-#%:   .-+#%@@@@@@@@@@%#+=. =*-..#@@@@@%+-",
+    r"*%@@@@@@@#*+#:..:=#%%@@@@@@@@@@%%##+-:-+-..-#@@#=---",
+    r"%#%@@@@@@@##@=.-+*#%%@@@@@@@@@@@%%##*-#@#=-+*##**%@%",
+    r"#%%%%%@@%*+#@#-+#*==++++*%%%#+++=--=#*@@%#*#%@%#@@@@",
+    r"+%@@%#%%#==%@@+****+=---=**++=--=+==+*%%#**%@@@%#%@@",
+    r"*@@@@@@@@%*@@%#*+#%**+**#+#*++**+#++*****++%@@@%+=+=",
+    r"@@@@@@@@@@*@@%####@%%%%#*#@@*+####%%##**+==*%@%#=-=-",
+    r"@@@@@%@@@#*@@%%%%%##%##*#%@@%**###%%%#**+--*#%#*----",
+    r"%@@%***##*+%@@%#%%@@@@@%##%%*##%@@@%%#**=--*%%%*===-",
+    r"=+++==+**+=*@@@%####****=-=-:=*###%%%%#+=:-#@@@%*+++",
+    r"--====++==-+%@@@####=-=+*****++-:*##@@@#=-=%@@@%#***",
+    r"-===--=====+%@@@%*###%%%%%##%#***##%@@@@#=+@@@@%****",
+    r"-=++==+*##*%@@@*=++*#%%%@%%%%%###*+@@@@@@##@@@@%++==",
+    r":+*#**#%%@@@@@= .*=-=+##%@@%%%#*+= -@@@@@@@@@@@%---:",
+    r"=#%@@@@@@@@@@+  =**+=::.::-======:  =@@@@@@@@@@@=--:",
+    r"#@@@@@@@@@@@%.  -*****+=------==-    +@@@@@@@@@@##*+",
+    r"@@@@@@@@@@@@+    =###****+=====-     *%%@@@@@@@@@@%#",
+    r"@@@@@@@@@@@@*     -*######**+=:.    .*%%%@@@@@@@@@@#",
+    r"@@@@@@@@@@@@%:     .-*%@%##*+=-.    :#%@%%@@@%%%@@@@",
+    r"@@@%%@@@@@@@@+       .-*%%%#*=.     :#@@%%#*+#%%%%%%",
+    r"@@@%##%@@@@@@#.      ...:===-.      -%@@%%*+#%%%%%%%",
 ]
 
 FIELDS_TEMPLATE = [
@@ -84,93 +116,102 @@ FIELDS_TEMPLATE = [
     ("Languages", "Python · TS · Rust · JS"),
 ]
 
-STATS_TEMPLATE = [
-    ("Repos", "repos"),
-    ("Stars", "stars"),
-    ("Followers", "followers"),
-    ("Commits (past year)", "commits"),
-]
-
 PALETTES = {
     "dark": {
         "bg": "#14100e",
         "text": "#f5efea",
         "muted": "#f5efea99",
         "accent": "#f0732d",
-        "border": "#ffffff1f",
     },
     "light": {
         "bg": "#fff8f4",
         "text": "#111111",
         "muted": "#11111199",
         "accent": "#f0732d",
-        "border": "#0000001a",
     },
 }
 
-LINE_HEIGHT = 24
-TOP_PAD = 34
-LEFT_ASCII_X = 24
-LEFT_TEXT_X = 260
+TEXT_FONT = 15
+TEXT_LH = 25
+ASCII_FONT = 9
+ASCII_LH = 10
+TOP_PAD = 30
+LEFT_ASCII_X = 18
+LEFT_TEXT_X = 330
+CARD_WIDTH = 780
+DIVIDER = "-" * 30
+
+
+def seg(p: dict, label: str, value) -> str:
+    return (
+        f'<tspan fill="{p["accent"]}">{label}</tspan>'
+        f'<tspan fill="{p["muted"]}">: </tspan>'
+        f'<tspan fill="{p["text"]}">{value}</tspan>'
+    )
+
+
+def row(x: int, y: float, inner: str) -> str:
+    return f'<tspan x="{x}" y="{y:.0f}">{inner}</tspan>'
 
 
 def render_svg(palette_name: str, values: dict) -> str:
     p = PALETTES[palette_name]
     lines = []
-    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{TOP_PAD}" fill="{p["accent"]}" font-weight="bold">abhinav@github</tspan>')
-    lines.append(
-        f'<tspan x="{LEFT_TEXT_X}" y="{TOP_PAD + LINE_HEIGHT}" fill="{p["muted"]}">'
-        + "-" * 28
-        + "</tspan>"
-    )
-    y = TOP_PAD + LINE_HEIGHT * 2
-    for label, value in FIELDS_TEMPLATE:
-        lines.append(
-            f'<tspan x="{LEFT_TEXT_X}" y="{y}">'
-            f'<tspan fill="{p["accent"]}">{label}</tspan>'
-            f'<tspan fill="{p["muted"]}">: </tspan>'
-            f'<tspan fill="{p["text"]}">{value}</tspan>'
-            "</tspan>"
-        )
-        y += LINE_HEIGHT
-    y += LINE_HEIGHT * 0.4
-    lines.append(
-        f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">' + "-" * 28 + "</tspan>"
-    )
-    y += LINE_HEIGHT
-    lines.append(
-        f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}">'
-        f'<tspan fill="{p["accent"]}">Member since</tspan>'
-        f'<tspan fill="{p["muted"]}">: </tspan>'
-        f'<tspan fill="{p["text"]}">{values["member_since"]}</tspan>'
-        "</tspan>"
-    )
-    y += LINE_HEIGHT
-    for label, key in STATS_TEMPLATE:
-        lines.append(
-            f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}">'
-            f'<tspan fill="{p["accent"]}">{label}</tspan>'
-            f'<tspan fill="{p["muted"]}">: </tspan>'
-            f'<tspan fill="{p["text"]}">{values[key]}</tspan>'
-            "</tspan>"
-        )
-        y += LINE_HEIGHT
+    y = TOP_PAD
+    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["accent"]}" font-weight="bold">abhinav@github</tspan>')
+    y += TEXT_LH
+    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
+    y += TEXT_LH
 
-    height = int(y + TOP_PAD * 0.6)
+    for label, value in FIELDS_TEMPLATE:
+        lines.append(row(LEFT_TEXT_X, y, seg(p, label, value)))
+        y += TEXT_LH
+
+    y += TEXT_LH * 0.3
+    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
+    y += TEXT_LH
+    lines.append(row(LEFT_TEXT_X, y, seg(p, "Member since", values["member_since"])))
+    y += TEXT_LH
+
+    y += TEXT_LH * 0.3
+    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
+    y += TEXT_LH
+    repos_line = (
+        seg(p, "Repos", values["repos"])
+        + f'<tspan fill="{p["muted"]}"> {{</tspan>'
+        + seg(p, "Contributed", values["contributed"])
+        + f'<tspan fill="{p["muted"]}">}} | </tspan>'
+        + seg(p, "Stars", values["stars"])
+    )
+    lines.append(row(LEFT_TEXT_X, y, repos_line))
+    y += TEXT_LH
+    commits_line = (
+        seg(p, "Commits (past yr)", values["commits"])
+        + f'<tspan fill="{p["muted"]}"> | </tspan>'
+        + seg(p, "Followers", values["followers"])
+    )
+    lines.append(row(LEFT_TEXT_X, y, commits_line))
+    y += TEXT_LH
+    lines.append(row(LEFT_TEXT_X, y, seg(p, "Top Language", values["top_language"])))
+    y += TEXT_LH
+
+    text_height = y + TOP_PAD * 0.6
+    ascii_height = TOP_PAD + len(ASCII_PORTRAIT) * ASCII_LH + TOP_PAD * 0.6
+    height = int(max(text_height, ascii_height))
 
     ascii_lines = []
     ay = TOP_PAD
-    for row in ASCII_ARCH:
-        ascii_lines.append(f'<tspan x="{LEFT_ASCII_X}" y="{ay}">{row}</tspan>')
-        ay += LINE_HEIGHT
+    for r in ASCII_PORTRAIT:
+        ascii_lines.append(f'<tspan x="{LEFT_ASCII_X}" y="{ay}">{r}</tspan>')
+        ay += ASCII_LH
 
     return f'''<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="600px" height="{height}px" font-family="'Fira Code',Consolas,monospace" font-size="14px">
-<rect width="600px" height="{height}px" fill="{p["bg"]}" rx="14"/>
-<text fill="{p["accent"]}" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{CARD_WIDTH}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
+<rect width="{CARD_WIDTH}px" height="{height}px" fill="{p["bg"]}" rx="16"/>
+<text fill="{p["accent"]}" xml:space="preserve" font-size="{ASCII_FONT}px">
 {chr(10).join(ascii_lines)}
 </text>
-<text fill="{p["text"]}" xml:space="preserve">
+<text fill="{p["text"]}" xml:space="preserve" font-size="{TEXT_FONT}px">
 {chr(10).join(lines)}
 </text>
 </svg>
@@ -184,13 +225,24 @@ def main() -> None:
         sys.exit(1)
 
     user = fetch_stats(token)
-    stars = sum(n["stargazerCount"] for n in user["repositories"]["nodes"])
+    repo_nodes = user["repositories"]["nodes"]
+    stars = sum(n["stargazerCount"] for n in repo_nodes)
+    lang_counts: dict = {}
+    for n in repo_nodes:
+        langs = n["languages"]["nodes"]
+        if langs:
+            name = langs[0]["name"]
+            lang_counts[name] = lang_counts.get(name, 0) + 1
+    top_language = max(lang_counts, key=lang_counts.get) if lang_counts else "n/a"
+
     values = {
         "member_since": member_since(user["createdAt"]),
         "repos": user["repositories"]["totalCount"],
+        "contributed": user["repositoriesContributedTo"]["totalCount"],
         "stars": stars,
         "followers": user["followers"]["totalCount"],
         "commits": user["contributionsCollection"]["totalCommitContributions"],
+        "top_language": top_language,
     }
 
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
