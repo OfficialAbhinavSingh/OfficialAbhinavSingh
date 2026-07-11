@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="600px" height="376px" font-family="'Fira Code',Consolas,monospace" font-size="14px">
+<rect width="600px" height="376px" fill="#14100e" rx="14"/>
+<text fill="#f0732d" xml:space="preserve">
+<tspan x="24" y="34">       /\ </tspan>
+<tspan x="24" y="58">      /  \ </tspan>
+<tspan x="24" y="82">     /\   \ </tspan>
+<tspan x="24" y="106">    /      \ </tspan>
+<tspan x="24" y="130">   /   ,,   \ </tspan>
+<tspan x="24" y="154">  /   |  |   \ </tspan>
+<tspan x="24" y="178"> /_-''    ''-_\ </tspan>
+</text>
+<text fill="#f5efea" xml:space="preserve">
+<tspan x="260" y="34" fill="#f0732d" font-weight="bold">abhinav@github</tspan>
+<tspan x="260" y="58" fill="#f5efea99">----------------------------</tspan>
+<tspan x="260" y="82"><tspan fill="#f0732d">OS</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">Arch Linux</tspan></tspan>
+<tspan x="260" y="106"><tspan fill="#f0732d">Kernel</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">Linux (Zen)</tspan></tspan>
+<tspan x="260" y="130"><tspan fill="#f0732d">WM</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">Hyprland</tspan></tspan>
+<tspan x="260" y="154"><tspan fill="#f0732d">Shell</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">zsh</tspan></tspan>
+<tspan x="260" y="178"><tspan fill="#f0732d">Languages</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">Python · TS · Rust · JS</tspan></tspan>
+<tspan x="260" y="212" fill="#f5efea99">----------------------------</tspan>
+<tspan x="260" y="236"><tspan fill="#f0732d">Member since</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">11 months</tspan></tspan>
+<tspan x="260" y="260"><tspan fill="#f0732d">Repos</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">17</tspan></tspan>
+<tspan x="260" y="284"><tspan fill="#f0732d">Stars</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">7</tspan></tspan>
+<tspan x="260" y="308"><tspan fill="#f0732d">Followers</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">19</tspan></tspan>
+<tspan x="260" y="332"><tspan fill="#f0732d">Commits (past year)</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">206</tspan></tspan>
+</text>
+</svg>
