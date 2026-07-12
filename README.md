@@ -50,11 +50,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-2. 🎉 Merged PR [#1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pull/1) in [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents)
-3. 🗣 Commented on [#31](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/31#issuecomment-4936335309) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-4. 🔒 Closed issue [#31](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/31) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-5. 🎉 Merged PR [#34](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/34) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+1. 🗣 Commented on [#935](https://github.com/huggingface/OpenEnv/issues/935#issuecomment-4948804627) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+2. ❌ Closed PR [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+3. 🗣 Commented on [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35#issuecomment-4948294817) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+4. 💪 Opened PR [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+5. 🎉 Merged PR [#1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pull/1) in [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
