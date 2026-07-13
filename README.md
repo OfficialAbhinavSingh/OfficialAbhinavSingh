@@ -50,11 +50,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#935](https://github.com/huggingface/OpenEnv/issues/935#issuecomment-4948804627) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-2. ❌ Closed PR [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-3. 🗣 Commented on [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35#issuecomment-4948294817) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-4. 💪 Opened PR [#35](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/pull/35) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
-5. 🎉 Merged PR [#1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pull/1) in [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents)
+1. 🗣 Commented on [#2102](https://github.com/steipete/CodexBar/pull/2102#issuecomment-4952880631) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. 🗣 Commented on [#2102](https://github.com/steipete/CodexBar/pull/2102#issuecomment-4952852126) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+3. 💪 Opened PR [#2102](https://github.com/steipete/CodexBar/pull/2102) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+4. 💪 Opened PR [#6257](https://github.com/mem0ai/mem0/pull/6257) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. ❗ Opened issue [#6256](https://github.com/mem0ai/mem0/issues/6256) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
