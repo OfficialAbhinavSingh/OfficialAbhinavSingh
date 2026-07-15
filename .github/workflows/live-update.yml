@@ -29,17 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  activity:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@v0.5.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  neofetch:
+  readme-updates:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -59,3 +49,6 @@ jobs:
           git add neofetch-dark.svg neofetch-light.svg
           git commit -m ":zap: Update neofetch stats card"
           git push
+      - uses: jamesgeorge007/github-activity-readme@v0.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
