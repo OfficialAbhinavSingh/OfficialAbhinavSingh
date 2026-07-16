@@ -20,6 +20,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 **Currently:**
 - 🛰️ Building **PS14** for ISRO's Bharatiya Antariksh Hackathon 2026 — forecasting GEO satellite electron flux
+- 🏆 First OSS PR merged into **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (18k+ ⭐) — [#2102](https://github.com/steipete/CodexBar/pull/2102), a macOS Keychain fix
 - 🧩 Contributing to **Scaler++** (2k+ users) — dark mode, calendar sync fixes, spaced-repetition features
 
 ## 🌐 Socials
