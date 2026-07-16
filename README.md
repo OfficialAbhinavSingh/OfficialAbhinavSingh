@@ -7,6 +7,10 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
+  🏆 <b>First open-source PR merged</b> into <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (18k+ ⭐) — fixed a macOS Keychain bug, verified end-to-end, merged by the maintainer himself. <a href="https://github.com/steipete/CodexBar/pull/2102">See PR #2102 →</a>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/neofetch-dark.svg">
     <img alt="Abhinav's neofetch card — Arch Linux + Hyprland, live GitHub stats" src="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/neofetch-light.svg">
@@ -32,6 +36,9 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | [**et-hackathon-ps7**](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7) | AI platform detecting behavioral anomalies in network/host telemetry — not signature-based |
 
 ## 🔧 Open-Source Contributions
+
+**⭐ [CodexBar](https://github.com/steipete/CodexBar)** (18k+ stars) — macOS menu bar app for AI usage tracking, by [Peter Steinberger](https://github.com/steipete) (creator of OpenClaw, ex-PSPDFKit founder)
+- [#2102 fix: Claude no-prompt Keychain repair for missing credentials file](https://github.com/steipete/CodexBar/pull/2102) — merged, closes [#1975](https://github.com/steipete/CodexBar/issues/1975). Diagnosed a Keychain-access gate that blocked even guaranteed no-UI reads under "Avoid Keychain Prompts," shipped the fix with regression tests + a live macOS verification script, reviewed and merged by the maintainer.
 
 **[Scaler++](https://github.com/Ritesh381/Scaler-extension)** — browser extension for scaler.com, 2k+ users
 - [#17 feat: Dark Mode & elegant site-wide themes](https://github.com/Ritesh381/Scaler-extension/pull/17) — merged
