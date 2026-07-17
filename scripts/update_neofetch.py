@@ -17,6 +17,8 @@ import json
 USERNAME = "OfficialAbhinavSingh"
 GRAPHQL_URL = "https://api.github.com/graphql"
 
+# Main query — fetches personal stats plus a list of orgs the user belongs to.
+# We get org-scoped commit counts in a second query (see ORG_COMMIT_QUERY).
 QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -37,13 +39,41 @@ query($login: String!) {
     contributionsCollection {
       totalCommitContributions
     }
+    organizations(first: 20) {
+      nodes {
+        login
+      }
+    }
+  }
+}
+"""
+
+# Per-org commit count query — called once per organisation.
+# GitHub only counts commits in org repos toward your profile graph when
+# your membership is public; this query uses the same scoping.
+ORG_COMMIT_QUERY = """
+query($login: String!, $org: ID!) {
+  user(login: $login) {
+    contributionsCollection(organizationID: $org) {
+      totalCommitContributions
+    }
+  }
+}
+"""
+
+# Separate query to resolve an org login → GraphQL node ID
+ORG_ID_QUERY = """
+query($org: String!) {
+  organization(login: $org) {
+    id
   }
 }
 """
 
 
-def fetch_stats(token: str) -> dict:
-    body = json.dumps({"query": QUERY, "variables": {"login": USERNAME}}).encode()
+def _graphql(token: str, query: str, variables: dict) -> dict:
+    """Execute a GraphQL query and return the parsed 'data' field."""
+    body = json.dumps({"query": query, "variables": variables}).encode()
     req = urllib.request.Request(
         GRAPHQL_URL,
         data=body,
@@ -57,7 +87,29 @@ def fetch_stats(token: str) -> dict:
         payload = json.load(resp)
     if "errors" in payload:
         raise RuntimeError(payload["errors"])
-    return payload["data"]["user"]
+    return payload["data"]
+
+
+def fetch_stats(token: str) -> dict:
+    return _graphql(token, QUERY, {"login": USERNAME})["user"]
+
+
+def fetch_org_id(token: str, org_login: str) -> str | None:
+    """Resolve an organisation login to its GraphQL node ID."""
+    try:
+        data = _graphql(token, ORG_ID_QUERY, {"org": org_login})
+        return data["organization"]["id"]
+    except Exception:
+        return None
+
+
+def fetch_org_commits(token: str, org_id: str) -> int:
+    """Return the user's commit count inside a specific organisation."""
+    try:
+        data = _graphql(token, ORG_COMMIT_QUERY, {"login": USERNAME, "org": org_id})
+        return data["user"]["contributionsCollection"]["totalCommitContributions"]
+    except Exception:
+        return 0
 
 
 def member_since(created_at: str) -> str:
@@ -235,13 +287,36 @@ def main() -> None:
             lang_counts[name] = lang_counts.get(name, 0) + 1
     top_language = max(lang_counts, key=lang_counts.get) if lang_counts else "n/a"
 
+    # --- Organisation commit contributions -----------------------------------
+    # GitHub only shows org commits on your profile when membership is public.
+    # We mirror that behaviour: iterate every org the token can see, resolve its
+    # node ID, then fetch the org-scoped contribution count and add it to the
+    # personal total so the neofetch card matches the profile graph.
+    personal_commits = user["contributionsCollection"]["totalCommitContributions"]
+    org_nodes = user.get("organizations", {}).get("nodes", [])
+    org_commit_total = 0
+    org_names: list[str] = []
+    for org in org_nodes:
+        org_login = org["login"]
+        org_id = fetch_org_id(token, org_login)
+        if org_id:
+            count = fetch_org_commits(token, org_id)
+            if count > 0:
+                org_commit_total += count
+                org_names.append(f"@{org_login}")
+                print(f"  org {org_login}: {count} commits")
+
+    total_commits = personal_commits + org_commit_total
+    orgs_label = ", ".join(org_names) if org_names else "(none visible)"
+    print(f"personal commits: {personal_commits}  |  org commits: {org_commit_total}  |  orgs: {orgs_label}")
+
     values = {
         "member_since": member_since(user["createdAt"]),
         "repos": user["repositories"]["totalCount"],
         "contributed": user["repositoriesContributedTo"]["totalCount"],
         "stars": stars,
         "followers": user["followers"]["totalCount"],
-        "commits": user["contributionsCollection"]["totalCommitContributions"],
+        "commits": total_commits,          # now includes org contributions
         "top_language": top_language,
     }
 
