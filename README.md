@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#2237](https://github.com/steipete/CodexBar/pull/2237) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-2. ❗ Opened issue [#2235](https://github.com/steipete/CodexBar/issues/2235) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. 🗣 Commented on [#2223](https://github.com/steipete/CodexBar/pull/2223#issuecomment-4995646012) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-4. 🗣 Commented on [#2222](https://github.com/steipete/CodexBar/issues/2222#issuecomment-4995643055) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. 💪 Opened PR [#2223](https://github.com/steipete/CodexBar/pull/2223) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+1. 💪 Opened PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. 🎉 Merged PR [#2255](https://github.com/steipete/CodexBar/pull/2255) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+3. ❗ Opened issue [#3](https://github.com/ML4SCI/DeepLense-AI-Scientist/issues/3) in [ML4SCI/DeepLense-AI-Scientist](https://github.com/ML4SCI/DeepLense-AI-Scientist)
+4. 🗣 Commented on [#6343](https://github.com/mem0ai/mem0/pull/6343#issuecomment-5003944494) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. ❗ Opened issue [#6371](https://github.com/mem0ai/mem0/issues/6371) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
