@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-2. 🎉 Merged PR [#2255](https://github.com/steipete/CodexBar/pull/2255) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. ❗ Opened issue [#3](https://github.com/ML4SCI/DeepLense-AI-Scientist/issues/3) in [ML4SCI/DeepLense-AI-Scientist](https://github.com/ML4SCI/DeepLense-AI-Scientist)
-4. 🗣 Commented on [#6343](https://github.com/mem0ai/mem0/pull/6343#issuecomment-5003944494) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-5. ❗ Opened issue [#6371](https://github.com/mem0ai/mem0/issues/6371) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 🎉 Merged PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. 🎉 Merged PR [#2237](https://github.com/steipete/CodexBar/pull/2237) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+3. 💪 Opened PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+4. 🎉 Merged PR [#2255](https://github.com/steipete/CodexBar/pull/2255) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+5. ❗ Opened issue [#3](https://github.com/ML4SCI/DeepLense-AI-Scientist/issues/3) in [ML4SCI/DeepLense-AI-Scientist](https://github.com/ML4SCI/DeepLense-AI-Scientist)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
