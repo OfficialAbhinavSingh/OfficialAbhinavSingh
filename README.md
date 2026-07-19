@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-2. 🎉 Merged PR [#2237](https://github.com/steipete/CodexBar/pull/2237) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. 💪 Opened PR [#2265](https://github.com/steipete/CodexBar/pull/2265) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-4. 🎉 Merged PR [#2255](https://github.com/steipete/CodexBar/pull/2255) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. ❗ Opened issue [#3](https://github.com/ML4SCI/DeepLense-AI-Scientist/issues/3) in [ML4SCI/DeepLense-AI-Scientist](https://github.com/ML4SCI/DeepLense-AI-Scientist)
+1. 💪 Opened PR [#11](https://github.com/mergit-io/Mergit-proto/pull/11) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+2. 💪 Opened PR [#10](https://github.com/mergit-io/Mergit-proto/pull/10) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+3. 💪 Opened PR [#9](https://github.com/mergit-io/Mergit-proto/pull/9) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+4. 💪 Opened PR [#8](https://github.com/mergit-io/Mergit-proto/pull/8) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+5. 🎉 Merged PR [#2293](https://github.com/steipete/CodexBar/pull/2293) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
