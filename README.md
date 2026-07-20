@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#11](https://github.com/mergit-io/Mergit-proto/pull/11) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-2. 💪 Opened PR [#10](https://github.com/mergit-io/Mergit-proto/pull/10) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-3. 💪 Opened PR [#9](https://github.com/mergit-io/Mergit-proto/pull/9) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-4. 💪 Opened PR [#8](https://github.com/mergit-io/Mergit-proto/pull/8) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-5. 🎉 Merged PR [#2293](https://github.com/steipete/CodexBar/pull/2293) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+1. 💪 Opened PR [#6435](https://github.com/mem0ai/mem0/pull/6435) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. ❗ Opened issue [#6434](https://github.com/mem0ai/mem0/issues/6434) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+3. 💪 Opened PR [#6433](https://github.com/mem0ai/mem0/pull/6433) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+4. 💪 Opened PR [#2343](https://github.com/steipete/CodexBar/pull/2343) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+5. ❗ Opened issue [#6432](https://github.com/mem0ai/mem0/issues/6432) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
