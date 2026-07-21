@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#6435](https://github.com/mem0ai/mem0/pull/6435) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. ❗ Opened issue [#6434](https://github.com/mem0ai/mem0/issues/6434) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 💪 Opened PR [#6433](https://github.com/mem0ai/mem0/pull/6433) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. 💪 Opened PR [#2343](https://github.com/steipete/CodexBar/pull/2343) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. ❗ Opened issue [#6432](https://github.com/mem0ai/mem0/issues/6432) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 🗣 Commented on [#6257](https://github.com/mem0ai/mem0/pull/6257#issuecomment-5029238962) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. 💪 Opened PR [#1679](https://github.com/future-agi/future-agi/pull/1679) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+3. ❗ Opened issue [#1678](https://github.com/future-agi/future-agi/issues/1678) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+4. 💪 Opened PR [#1674](https://github.com/future-agi/future-agi/pull/1674) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+5. ❗ Opened issue [#1673](https://github.com/future-agi/future-agi/issues/1673) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
