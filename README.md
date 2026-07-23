@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#6516](https://github.com/mem0ai/mem0/pull/6516) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. ❗ Opened issue [#6515](https://github.com/mem0ai/mem0/issues/6515) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 💪 Opened PR [#1714](https://github.com/future-agi/future-agi/pull/1714) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
-4. ❗ Opened issue [#1713](https://github.com/future-agi/future-agi/issues/1713) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
-5. 🗣 Commented on [#25](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7/issues/25#issuecomment-5041953296) in [OfficialAbhinavSingh/et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)
+1. 💪 Opened PR [#6537](https://github.com/mem0ai/mem0/pull/6537) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. ❗ Opened issue [#6536](https://github.com/mem0ai/mem0/issues/6536) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+3. 🗣 Commented on [#6449](https://github.com/mem0ai/mem0/pull/6449#issuecomment-5061343810) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+4. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5060784208) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+5. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5060691692) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
