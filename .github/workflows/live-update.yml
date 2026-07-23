@@ -35,6 +35,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history needed by github-activity-readme
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -52,3 +54,4 @@ jobs:
       - uses: jamesgeorge007/github-activity-readme@v0.5.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
