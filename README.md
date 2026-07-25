@@ -58,11 +58,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#6537](https://github.com/mem0ai/mem0/pull/6537) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. ❗ Opened issue [#6536](https://github.com/mem0ai/mem0/issues/6536) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 🗣 Commented on [#6449](https://github.com/mem0ai/mem0/pull/6449#issuecomment-5061343810) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5060784208) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-5. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5060691692) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+1. 🗣 Commented on [#2243](https://github.com/steipete/CodexBar/issues/2243#issuecomment-5070328853) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. 💪 Opened PR [#1011](https://github.com/huggingface/OpenEnv/pull/1011) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+3. 💪 Opened PR [#1008](https://github.com/huggingface/OpenEnv/pull/1008) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+4. 💪 Opened PR [#6537](https://github.com/mem0ai/mem0/pull/6537) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. ❗ Opened issue [#6536](https://github.com/mem0ai/mem0/issues/6536) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
