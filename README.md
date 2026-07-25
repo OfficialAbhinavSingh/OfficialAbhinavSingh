@@ -20,8 +20,8 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 **Currently:**
 - 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
-- 🏆 First OSS PR merged into **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (18k+ ⭐) — [#2102](https://github.com/steipete/CodexBar/pull/2102), a macOS Keychain fix
-- 🧩 Contributing to **Scaler++** (2k+ users) — dark mode, calendar sync fixes, spaced-repetition features
+- 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (19k+ ⭐) — 5 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
+- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (61k+ ⭐) and **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** — scope-isolation, vector-store scoring, and client API bugs, each with red→green regression tests
 
 ## 🌐 Socials
 
@@ -38,13 +38,20 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 ## 🔧 Open-Source Contributions
 
-**⭐ [CodexBar](https://github.com/steipete/CodexBar)** (18k+ stars) — macOS menu bar app for AI usage tracking, by [Peter Steinberger](https://github.com/steipete) (creator of OpenClaw, ex-PSPDFKit founder)
+**⭐ [CodexBar](https://github.com/steipete/CodexBar)** (19k+ stars) — macOS menu bar app for AI usage tracking, by [Peter Steinberger](https://github.com/steipete) (creator of OpenClaw, ex-PSPDFKit founder) · **Contributor, 5 PRs merged**
 - [#2102 fix: Claude no-prompt Keychain repair for missing credentials file](https://github.com/steipete/CodexBar/pull/2102) — merged, closes [#1975](https://github.com/steipete/CodexBar/issues/1975). Diagnosed a Keychain-access gate that blocked even guaranteed no-UI reads under "Avoid Keychain Prompts," shipped the fix with regression tests + a live macOS verification script, reviewed and merged by the maintainer.
+- [#2237 feat: `codexbar guard` — quota-aware exit code to gate automation](https://github.com/steipete/CodexBar/pull/2237) — merged. Self-proposed feature: a CLI subcommand that exits non-zero when a provider's quota is spent, so scripts and CI can stop before burning a rate limit.
+- Usage-percent correctness series — merged: [#2255](https://github.com/steipete/CodexBar/pull/2255) (Cursor), [#2265](https://github.com/steipete/CodexBar/pull/2265) (Abacus), [#2293](https://github.com/steipete/CodexBar/pull/2293) (ElevenLabs). Providers reporting over-quota or already-scaled values rendered as impossible percentages in the menu bar; each fix landed with a red→green test transcript in the PR body.
+- OpenCode/OpenCodeGo percent unit double-scaling — a fraction heuristic also ran on the already-computed `used/limit` percent, so real usage under 1% got multiplied by 100. Fix landed in [#2331](https://github.com/steipete/CodexBar/pull/2331) ([commit](https://github.com/steipete/CodexBar/commit/bda63b9b3) authored by me).
 
-**[Scaler++](https://github.com/Ritesh381/Scaler-extension)** — browser extension for scaler.com, 2k+ users
-- [#17 feat: Dark Mode & elegant site-wide themes](https://github.com/Ritesh381/Scaler-extension/pull/17) — merged
-- [#18 fix: Google Calendar 24h auto-sync fails silently](https://github.com/Ritesh381/Scaler-extension/pull/18) — merged
-- [#19 feat: Smart Revision — spaced repetition](https://github.com/Ritesh381/Scaler-extension/pull/19) — open
+**⭐ [mem0](https://github.com/mem0ai/mem0)** (61k+ stars) — universal memory layer for AI agents
+- [#6343 fix(ts-oss): don't let `update()` metadata overwrite user_id/agent_id/run_id](https://github.com/mem0ai/mem0/pull/6343) — merged. Caller metadata was spread over the scope identifiers, silently re-homing a memory to a different user/agent/run.
+- [#6435 fix(vector-stores/baidu): convert L2 distance to similarity score in `search()`](https://github.com/mem0ai/mem0/pull/6435) — merged. Baidu VectorDB returned raw L2 distance where every other store returns a similarity, inverting relevance order and breaking score thresholds.
+- Open: reranker candidate-pool fix ([#6449](https://github.com/mem0ai/mem0/pull/6449) Python / [#6537](https://github.com/mem0ai/mem0/pull/6537) TS) and a hash-dedup TOCTOU race in `add()` ([#6516](https://github.com/mem0ai/mem0/pull/6516) Python / [#6532](https://github.com/mem0ai/mem0/pull/6532) TS).
+
+**⭐ [OpenEnv](https://github.com/huggingface/OpenEnv)** (Hugging Face) — environment interface library for RL post-training
+- [#959 feat(env-client): sync bootstrap constructors + public `base_url`](https://github.com/huggingface/OpenEnv/pull/959) — merged, closes [#935](https://github.com/huggingface/OpenEnv/issues/935). Made `from_docker_image` / `from_hub` usable from sync code and exposed the resolved base URL instead of forcing callers into private attributes.
+- Open: [#1008](https://github.com/huggingface/OpenEnv/pull/1008) path traversal via agent-supplied names in `finqa_env`, [#1011](https://github.com/huggingface/OpenEnv/pull/1011) discovery cache moved out of world-writable `/tmp`, [#1006](https://github.com/huggingface/OpenEnv/pull/1006) execution-grounded DuckDB SQL-optimization environment.
 
 ## 💻 Tech Stack
 
