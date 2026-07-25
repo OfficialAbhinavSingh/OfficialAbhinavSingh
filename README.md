@@ -7,7 +7,7 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
-  🏆 <b>First open-source PR merged</b> into <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (18k+ ⭐) — fixed a macOS Keychain bug, verified end-to-end, merged by the maintainer himself. <a href="https://github.com/steipete/CodexBar/pull/2102">See PR #2102 →</a>
+  🏆 <b>8 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 5) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (61k+ ⭐, 2) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (1). Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 </p>
 
 <p align="center">
