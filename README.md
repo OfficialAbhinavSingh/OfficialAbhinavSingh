@@ -65,11 +65,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#3473](https://github.com/huggingface/peft/pull/3473) in [huggingface/peft](https://github.com/huggingface/peft)
-2. 🗣 Commented on [#2243](https://github.com/steipete/CodexBar/issues/2243#issuecomment-5070328853) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. 💪 Opened PR [#1011](https://github.com/huggingface/OpenEnv/pull/1011) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-4. 💪 Opened PR [#1008](https://github.com/huggingface/OpenEnv/pull/1008) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-5. 💪 Opened PR [#6537](https://github.com/mem0ai/mem0/pull/6537) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5079707618) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+2. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5079553357) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+3. 💪 Opened PR [#3473](https://github.com/huggingface/peft/pull/3473) in [huggingface/peft](https://github.com/huggingface/peft)
+4. 🗣 Commented on [#2243](https://github.com/steipete/CodexBar/issues/2243#issuecomment-5070328853) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+5. 💪 Opened PR [#1011](https://github.com/huggingface/OpenEnv/pull/1011) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
