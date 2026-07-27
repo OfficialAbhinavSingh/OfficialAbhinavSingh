@@ -65,11 +65,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5079707618) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-2. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5079553357) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-3. 💪 Opened PR [#3473](https://github.com/huggingface/peft/pull/3473) in [huggingface/peft](https://github.com/huggingface/peft)
-4. 🗣 Commented on [#2243](https://github.com/steipete/CodexBar/issues/2243#issuecomment-5070328853) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. 💪 Opened PR [#1011](https://github.com/huggingface/OpenEnv/pull/1011) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+1. 💪 Opened PR [#10657](https://github.com/sktime/sktime/pull/10657) in [sktime/sktime](https://github.com/sktime/sktime)
+2. 🗣 Commented on [#3429](https://github.com/sktime/sktime/issues/3429#issuecomment-5085338916) in [sktime/sktime](https://github.com/sktime/sktime)
+3. 🎉 Merged PR [#10656](https://github.com/sktime/sktime/pull/10656) in [sktime/sktime](https://github.com/sktime/sktime)
+4. 🗣 Commented on [#10656](https://github.com/sktime/sktime/pull/10656#issuecomment-5085156294) in [sktime/sktime](https://github.com/sktime/sktime)
+5. 💪 Opened PR [#10656](https://github.com/sktime/sktime/pull/10656) in [sktime/sktime](https://github.com/sktime/sktime)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
