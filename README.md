@@ -65,11 +65,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#10657](https://github.com/sktime/sktime/pull/10657) in [sktime/sktime](https://github.com/sktime/sktime)
-2. 🗣 Commented on [#3429](https://github.com/sktime/sktime/issues/3429#issuecomment-5085338916) in [sktime/sktime](https://github.com/sktime/sktime)
-3. 🎉 Merged PR [#10656](https://github.com/sktime/sktime/pull/10656) in [sktime/sktime](https://github.com/sktime/sktime)
-4. 🗣 Commented on [#10656](https://github.com/sktime/sktime/pull/10656#issuecomment-5085156294) in [sktime/sktime](https://github.com/sktime/sktime)
-5. 💪 Opened PR [#10656](https://github.com/sktime/sktime/pull/10656) in [sktime/sktime](https://github.com/sktime/sktime)
+1. 🗣 Commented on [#266](https://github.com/andrewyng/openworker/pull/266#issuecomment-5097508359) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
+2. 💪 Opened PR [#266](https://github.com/andrewyng/openworker/pull/266) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
+3. ❗ Opened issue [#265](https://github.com/andrewyng/openworker/issues/265) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
+4. 💪 Opened PR [#10668](https://github.com/sktime/sktime/pull/10668) in [sktime/sktime](https://github.com/sktime/sktime)
+5. 🗣 Commented on [#1742](https://github.com/sktime/sktime/issues/1742#issuecomment-5096489040) in [sktime/sktime](https://github.com/sktime/sktime)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
