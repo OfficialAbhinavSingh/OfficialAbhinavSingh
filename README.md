@@ -65,11 +65,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#266](https://github.com/andrewyng/openworker/pull/266#issuecomment-5097508359) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
-2. 💪 Opened PR [#266](https://github.com/andrewyng/openworker/pull/266) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
-3. ❗ Opened issue [#265](https://github.com/andrewyng/openworker/issues/265) in [andrewyng/openworker](https://github.com/andrewyng/openworker)
-4. 💪 Opened PR [#10668](https://github.com/sktime/sktime/pull/10668) in [sktime/sktime](https://github.com/sktime/sktime)
-5. 🗣 Commented on [#1742](https://github.com/sktime/sktime/issues/1742#issuecomment-5096489040) in [sktime/sktime](https://github.com/sktime/sktime)
+1. 🗣 Commented on [#2475](https://github.com/steipete/CodexBar/pull/2475#issuecomment-5108973432) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. 💪 Opened PR [#2483](https://github.com/steipete/CodexBar/pull/2483) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+3. 🎉 Merged PR [#2335](https://github.com/steipete/CodexBar/pull/2335) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+4. 🎉 Merged PR [#2342](https://github.com/steipete/CodexBar/pull/2342) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+5. 🎉 Merged PR [#2343](https://github.com/steipete/CodexBar/pull/2343) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
