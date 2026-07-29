@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="780px" height="388px" font-family="'Fira Code',Consolas,monospace">
-<rect width="780px" height="388px" fill="#14100e" rx="16"/>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="780px" height="413px" font-family="'Fira Code',Consolas,monospace">
+<rect width="780px" height="413px" fill="#14100e" rx="16"/>
 <text fill="#f0732d" xml:space="preserve" font-size="9px">
 <tspan x="18" y="30">  .*#####-.....:*###%%######%%#=.........:+####%*:..</tspan>
 <tspan x="18" y="40">.::=@@@@@@*-----%@@@%*=-:--==+*=:-------+@@@@@@@+-::</tspan>
@@ -42,7 +42,8 @@
 <tspan x="330" y="238"><tspan fill="#f0732d">Member since</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">1 year, 0 months</tspan></tspan>
 <tspan x="330" y="270" fill="#f5efea99">------------------------------</tspan>
 <tspan x="330" y="295"><tspan fill="#f0732d">Repos</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">18</tspan><tspan fill="#f5efea99"> {</tspan><tspan fill="#f0732d">Contributed</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">23</tspan><tspan fill="#f5efea99">} | </tspan><tspan fill="#f0732d">Stars</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">7</tspan></tspan>
-<tspan x="330" y="320"><tspan fill="#f0732d">Commits (past yr)</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">369</tspan><tspan fill="#f5efea99"> | </tspan><tspan fill="#f0732d">Followers</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">14</tspan></tspan>
+<tspan x="330" y="320"><tspan fill="#f0732d">Commits (past yr)</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">387</tspan><tspan fill="#f5efea99"> | </tspan><tspan fill="#f0732d">Followers</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">13</tspan></tspan>
 <tspan x="330" y="345"><tspan fill="#f0732d">Top Language</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">Python</tspan></tspan>
+<tspan x="330" y="370"><tspan fill="#f0732d">Upstream PRs</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">18 merged</tspan><tspan fill="#f5efea99"> | </tspan><tspan fill="#f0732d">In review</tspan><tspan fill="#f5efea99">: </tspan><tspan fill="#f5efea">25</tspan></tspan>
 </text>
 </svg>

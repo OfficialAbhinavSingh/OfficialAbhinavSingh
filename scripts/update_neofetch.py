@@ -70,6 +70,32 @@ query($org: String!) {
 }
 """
 
+# Upstream pull requests: counted only over projects owned by someone else, so
+# the number means "PRs other maintainers merged", not "PRs I merged into my own
+# repos". Add a repo here when a contribution lands somewhere new.
+UPSTREAM_REPOS = [
+    "steipete/CodexBar",
+    "mem0ai/mem0",
+    "huggingface/OpenEnv",
+    "sktime/sktime",
+    "future-agi/future-agi",
+    "openclaw/openclaw",
+    "andrewyng/openworker",
+    "Ritesh381/Scaler-extension",
+    "ShivenduShivu/MemoryLayer_for_Agents",
+    "ML4SCI/DeepLense-AI-Scientist",
+    "mwt5345/DeepLenseSim",
+    "CodeGraphContext/CodeGraphContext",
+]
+
+PR_COUNT_QUERY = """
+query($q: String!) {
+  search(query: $q, type: ISSUE) {
+    issueCount
+  }
+}
+"""
+
 
 def _graphql(token: str, query: str, variables: dict) -> dict:
     """Execute a GraphQL query and return the parsed 'data' field."""
@@ -110,6 +136,19 @@ def fetch_org_commits(token: str, org_id: str) -> int:
         return data["user"]["contributionsCollection"]["totalCommitContributions"]
     except Exception:
         return 0
+
+
+def fetch_upstream_prs(token: str) -> tuple[int, int]:
+    """Return (merged, open) PR counts across UPSTREAM_REPOS."""
+    scope = " ".join(f"repo:{r}" for r in UPSTREAM_REPOS)
+    counts = []
+    for state in ("is:merged", "is:open"):
+        q = f"author:{USERNAME} type:pr {state} {scope}"
+        try:
+            counts.append(_graphql(token, PR_COUNT_QUERY, {"q": q})["search"]["issueCount"])
+        except Exception:
+            counts.append(0)
+    return counts[0], counts[1]
 
 
 def member_since(created_at: str) -> str:
@@ -246,6 +285,13 @@ def render_svg(palette_name: str, values: dict) -> str:
     y += TEXT_LH
     lines.append(row(LEFT_TEXT_X, y, seg(p, "Top Language", values["top_language"])))
     y += TEXT_LH
+    upstream_line = (
+        seg(p, "Upstream PRs", f'{values["prs_merged"]} merged')
+        + f'<tspan fill="{p["muted"]}"> | </tspan>'
+        + seg(p, "In review", values["prs_open"])
+    )
+    lines.append(row(LEFT_TEXT_X, y, upstream_line))
+    y += TEXT_LH
 
     text_height = y + TOP_PAD * 0.6
     ascii_height = TOP_PAD + len(ASCII_PORTRAIT) * ASCII_LH + TOP_PAD * 0.6
@@ -310,6 +356,9 @@ def main() -> None:
     orgs_label = ", ".join(org_names) if org_names else "(none visible)"
     print(f"personal commits: {personal_commits}  |  org commits: {org_commit_total}  |  orgs: {orgs_label}")
 
+    prs_merged, prs_open = fetch_upstream_prs(token)
+    print(f"upstream PRs: {prs_merged} merged, {prs_open} open")
+
     values = {
         "member_since": member_since(user["createdAt"]),
         "repos": user["repositories"]["totalCount"],
@@ -318,6 +367,8 @@ def main() -> None:
         "followers": user["followers"]["totalCount"],
         "commits": total_commits,          # now includes org contributions
         "top_language": top_language,
+        "prs_merged": prs_merged,
+        "prs_open": prs_open,
     }
 
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
