@@ -69,11 +69,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2475](https://github.com/steipete/CodexBar/pull/2475) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-2. 🎉 Merged PR [#2483](https://github.com/steipete/CodexBar/pull/2483) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. 🗣 Commented on [#2475](https://github.com/steipete/CodexBar/pull/2475#issuecomment-5119327362) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-4. 🗣 Commented on [#2483](https://github.com/steipete/CodexBar/pull/2483#issuecomment-5118147414) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. 💪 Opened PR [#6656](https://github.com/mem0ai/mem0/pull/6656) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 🗣 Commented on [#1722](https://github.com/future-agi/future-agi/pull/1722#issuecomment-5129160610) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+2. 🗣 Commented on [#1714](https://github.com/future-agi/future-agi/pull/1714#issuecomment-5129160282) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+3. 🗣 Commented on [#1679](https://github.com/future-agi/future-agi/pull/1679#issuecomment-5129160055) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+4. 🗣 Commented on [#1674](https://github.com/future-agi/future-agi/pull/1674#issuecomment-5129159793) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+5. ❌ Closed PR [#112428](https://github.com/openclaw/openclaw/pull/112428) in [openclaw/openclaw](https://github.com/openclaw/openclaw)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
