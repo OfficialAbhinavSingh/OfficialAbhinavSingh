@@ -69,11 +69,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#10695](https://github.com/sktime/sktime/issues/10695) in [sktime/sktime](https://github.com/sktime/sktime)
-2. 💪 Opened PR [#1506](https://github.com/CodeGraphContext/CodeGraphContext/pull/1506) in [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)
-3. 🎉 Merged PR [#1453](https://github.com/CodeGraphContext/CodeGraphContext/pull/1453) in [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)
-4. 🗣 Commented on [#2536](https://github.com/steipete/CodexBar/pull/2536#issuecomment-5145061329) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. 💪 Opened PR [#2536](https://github.com/steipete/CodexBar/pull/2536) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+1. 💪 Opened PR [#2559](https://github.com/steipete/CodexBar/pull/2559) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+2. ❗ Opened issue [#2558](https://github.com/steipete/CodexBar/issues/2558) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+3. 🗣 Commented on [#2536](https://github.com/steipete/CodexBar/pull/2536#issuecomment-5153134741) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
+4. ❗ Opened issue [#10695](https://github.com/sktime/sktime/issues/10695) in [sktime/sktime](https://github.com/sktime/sktime)
+5. 💪 Opened PR [#1506](https://github.com/CodeGraphContext/CodeGraphContext/pull/1506) in [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
