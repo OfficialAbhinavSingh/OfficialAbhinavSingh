@@ -7,7 +7,7 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
-  🏆 <b>18 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 11) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 2) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (2.4k+ ⭐, 1) · +4 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>40 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 13) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 2) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (2.4k+ ⭐, 1) · +4 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 **Currently:**
 - 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
-- 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (19k+ ⭐) — 11 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
+- 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (19k+ ⭐) — 13 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
 - 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (62k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** and **[sktime/sktime](https://github.com/sktime/sktime)** — scope-isolation, vector-store scoring, and client API bugs, each with red→green regression tests
 - ✉️ Invited by co-founder Nikhil Pareek to contribute to **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — 4 PRs open on the LLM eval & observability platform
 
@@ -39,7 +39,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 ## 🔧 Open-Source Contributions
 
-**⭐ [CodexBar](https://github.com/steipete/CodexBar)** (19k+ stars) — macOS menu bar app for AI usage tracking, by [Peter Steinberger](https://github.com/steipete) (creator of OpenClaw, ex-PSPDFKit founder) · **Contributor, 11 PRs merged**
+**⭐ [CodexBar](https://github.com/steipete/CodexBar)** (19k+ stars) — macOS menu bar app for AI usage tracking, by [Peter Steinberger](https://github.com/steipete) (creator of OpenClaw, ex-PSPDFKit founder) · **Contributor, 13 PRs merged**
 - [#2102 fix: Claude no-prompt Keychain repair for missing credentials file](https://github.com/steipete/CodexBar/pull/2102) — merged, closes [#1975](https://github.com/steipete/CodexBar/issues/1975). Diagnosed a Keychain-access gate that blocked even guaranteed no-UI reads under "Avoid Keychain Prompts," shipped the fix with regression tests + a live macOS verification script, reviewed and merged by the maintainer.
 - [#2237 feat: `codexbar guard` — quota-aware exit code to gate automation](https://github.com/steipete/CodexBar/pull/2237) — merged. Self-proposed feature: a CLI subcommand that exits non-zero when a provider's quota is spent, so scripts and CI can stop before burning a rate limit.
 - [#2483 fix: validate LiteLLM and LLM Proxy base URLs before sending the API key](https://github.com/steipete/CodexBar/pull/2483) — merged. A malformed or attacker-supplied base URL was accepted as-is, so the configured key went out with the request; the URL is now validated first.
