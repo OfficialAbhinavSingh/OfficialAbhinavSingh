@@ -7,7 +7,7 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
-  🏆 <b>22 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 13) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 2) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (2.4k+ ⭐, 1) · +4 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>21 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 13) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 3) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (2.4k+ ⭐, 1) · +4 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 **Currently:**
 - 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
 - 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (19k+ ⭐) — 13 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
-- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (62k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** and **[sktime/sktime](https://github.com/sktime/sktime)** — scope-isolation, vector-store scoring, and client API bugs, each with red→green regression tests
+- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (62k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)**, **[sktime/sktime](https://github.com/sktime/sktime)** and **[CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ ⭐) — scope-isolation, vector-store scoring, client API, and graph-viz bugs, each with red→green regression tests
 - ✉️ Invited by co-founder Nikhil Pareek to contribute to **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — 4 PRs open on the LLM eval & observability platform
 
 ## 🌐 Socials
@@ -51,11 +51,16 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 **⭐ [mem0](https://github.com/mem0ai/mem0)** (62k+ stars) — universal memory layer for AI agents, by Mem0 (Y Combinator S24)
 - [#6343 fix(ts-oss): don't let `update()` metadata overwrite user_id/agent_id/run_id](https://github.com/mem0ai/mem0/pull/6343) — merged. Caller metadata was spread over the scope identifiers, silently re-homing a memory to a different user/agent/run.
 - [#6435 fix(vector-stores/baidu): convert L2 distance to similarity score in `search()`](https://github.com/mem0ai/mem0/pull/6435) — merged. Baidu VectorDB returned raw L2 distance where every other store returns a similarity, inverting relevance order and breaking score thresholds.
-- Open: reranker candidate-pool fix ([#6449](https://github.com/mem0ai/mem0/pull/6449) Python / [#6537](https://github.com/mem0ai/mem0/pull/6537) TS), a hash-dedup TOCTOU race in `add()` ([#6516](https://github.com/mem0ai/mem0/pull/6516) Python / [#6532](https://github.com/mem0ai/mem0/pull/6532) TS), Upstash metadata filter-injection escaping ([#6610](https://github.com/mem0ai/mem0/pull/6610)), `add()` metadata setting a memory's identity scope ([#6656](https://github.com/mem0ai/mem0/pull/6656)), and two provider-config fixes ([#6302](https://github.com/mem0ai/mem0/pull/6302), [#6257](https://github.com/mem0ai/mem0/pull/6257)).
+- [#6656 fix(memory): stop `add()` metadata from setting a memory's identity scope](https://github.com/mem0ai/mem0/pull/6656) — merged. Same class of bug as #6343, on the `add()` path instead of `update()`.
+- Open: reranker candidate-pool fix ([#6449](https://github.com/mem0ai/mem0/pull/6449) Python / [#6537](https://github.com/mem0ai/mem0/pull/6537) TS), a hash-dedup TOCTOU race in `add()` ([#6516](https://github.com/mem0ai/mem0/pull/6516) Python / [#6532](https://github.com/mem0ai/mem0/pull/6532) TS), and two provider-config fixes ([#6302](https://github.com/mem0ai/mem0/pull/6302), [#6257](https://github.com/mem0ai/mem0/pull/6257)).
 
 **⭐ [OpenEnv](https://github.com/huggingface/OpenEnv)** (Hugging Face, 2.4k+ stars) — environment interface library for RL post-training
 - [#959 feat(env-client): sync bootstrap constructors + public `base_url`](https://github.com/huggingface/OpenEnv/pull/959) — merged, closes [#935](https://github.com/huggingface/OpenEnv/issues/935). Made `from_docker_image` / `from_hub` usable from sync code and exposed the resolved base URL instead of forcing callers into private attributes.
 - Open: [#1008](https://github.com/huggingface/OpenEnv/pull/1008) path traversal via agent-supplied names in `finqa_env`, [#1011](https://github.com/huggingface/OpenEnv/pull/1011) discovery cache moved out of world-writable `/tmp`, [#1006](https://github.com/huggingface/OpenEnv/pull/1006) execution-grounded DuckDB SQL-optimization environment.
+
+**⭐ [CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ stars) — MCP server + CLI that indexes local code into a graph database for AI assistant context
+- [#1453 fix(viz): handle real FalkorDB Node/Edge shape in offline renderer](https://github.com/CodeGraphContext/CodeGraphContext/pull/1453) — merged. The offline graph renderer assumed a shape FalkorDB never actually returns, breaking visualization.
+- [#1506 fix(viz): match LadybugDB's uppercase internal keys (_ID/_LABEL/_SRC/_DST)](https://github.com/CodeGraphContext/CodeGraphContext/pull/1506) — merged. Same renderer, a second backend with different key casing.
 
 ## 💻 Tech Stack
 
