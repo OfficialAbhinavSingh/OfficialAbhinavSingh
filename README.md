@@ -74,11 +74,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1674](https://github.com/future-agi/future-agi/pull/1674#issuecomment-5208419645) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
-2. 🎉 Merged PR [#2684](https://github.com/steipete/CodexBar/pull/2684) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-3. 💪 Opened PR [#2684](https://github.com/steipete/CodexBar/pull/2684) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-4. ❗ Opened issue [#2683](https://github.com/steipete/CodexBar/issues/2683) in [steipete/CodexBar](https://github.com/steipete/CodexBar)
-5. 🗣 Commented on [#10732](https://github.com/sktime/sktime/pull/10732#issuecomment-5193570394) in [sktime/sktime](https://github.com/sktime/sktime)
+1. 💪 Opened PR [#6868](https://github.com/mem0ai/mem0/pull/6868) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. ❗ Opened issue [#6867](https://github.com/mem0ai/mem0/issues/6867) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+3. 🗣 Commented on [#6449](https://github.com/mem0ai/mem0/pull/6449#issuecomment-5231283666) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+4. 🗣 Commented on [#6516](https://github.com/mem0ai/mem0/pull/6516#issuecomment-5231283587) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. 🗣 Commented on [#1674](https://github.com/future-agi/future-agi/pull/1674#issuecomment-5208419645) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
