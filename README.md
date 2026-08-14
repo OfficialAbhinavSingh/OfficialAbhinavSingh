@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#17](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/issues/17) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-2. 💪 Opened PR [#15](https://github.com/mergit-io/Mergit-proto/pull/15) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-3. 🗣 Commented on [#15](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/issues/15#issuecomment-5284157790) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-4. 💪 Opened PR [#16](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/16) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-5. ❗ Opened issue [#15](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/issues/15) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. 🎉 Merged PR [#13](https://github.com/mergit-io/Mergit-proto/pull/13) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+2. 💪 Opened PR [#16](https://github.com/mergit-io/Mergit-proto/pull/16) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+3. 🎉 Merged PR [#15](https://github.com/mergit-io/Mergit-proto/pull/15) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+4. ❗ Opened issue [#19](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/issues/19) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+5. 🗣 Commented on [#13](https://github.com/mergit-io/Mergit-proto/pull/13#issuecomment-5289799472) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
