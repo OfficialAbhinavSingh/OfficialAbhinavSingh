@@ -7,7 +7,7 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
-  🏆 <b>21 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 13) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 3) · <a href="https://github.com/huggingface/OpenEnv">huggingface/OpenEnv</a> (2.4k+ ⭐, 1) · +4 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>21 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (19k+ ⭐, 13) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (62k+ ⭐, 3) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (9.9k+ ⭐, 2) · +3 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 **Currently:**
 - 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
 - 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (19k+ ⭐) — 13 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
-- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (62k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)**, **[sktime/sktime](https://github.com/sktime/sktime)** and **[CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ ⭐) — scope-isolation, vector-store scoring, client API, and graph-viz bugs, each with red→green regression tests
+- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (62k+ ⭐), **[sktime/sktime](https://github.com/sktime/sktime)** (9.9k+ ⭐) and **[CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ ⭐) — scope-isolation, vector-store scoring, estimator test-parameter coverage, and graph-viz bugs, each with red→green regression tests
 - ✉️ Invited by co-founder Nikhil Pareek to contribute to **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — 4 PRs open on the LLM eval & observability platform
 
 ## 🌐 Socials
@@ -54,9 +54,10 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 - [#6656 fix(memory): stop `add()` metadata from setting a memory's identity scope](https://github.com/mem0ai/mem0/pull/6656) — merged. Same class of bug as #6343, on the `add()` path instead of `update()`.
 - Open: reranker candidate-pool fix ([#6449](https://github.com/mem0ai/mem0/pull/6449) Python / [#6537](https://github.com/mem0ai/mem0/pull/6537) TS), a hash-dedup TOCTOU race in `add()` ([#6516](https://github.com/mem0ai/mem0/pull/6516) Python / [#6532](https://github.com/mem0ai/mem0/pull/6532) TS), and two provider-config fixes ([#6302](https://github.com/mem0ai/mem0/pull/6302), [#6257](https://github.com/mem0ai/mem0/pull/6257)).
 
-**⭐ [OpenEnv](https://github.com/huggingface/OpenEnv)** (Hugging Face, 2.4k+ stars) — environment interface library for RL post-training
-- [#959 feat(env-client): sync bootstrap constructors + public `base_url`](https://github.com/huggingface/OpenEnv/pull/959) — merged, closes [#935](https://github.com/huggingface/OpenEnv/issues/935). Made `from_docker_image` / `from_hub` usable from sync code and exposed the resolved base URL instead of forcing callers into private attributes.
-- Open: [#1008](https://github.com/huggingface/OpenEnv/pull/1008) path traversal via agent-supplied names in `finqa_env`, [#1011](https://github.com/huggingface/OpenEnv/pull/1011) discovery cache moved out of world-writable `/tmp`, [#1006](https://github.com/huggingface/OpenEnv/pull/1006) execution-grounded DuckDB SQL-optimization environment.
+**⭐ [sktime](https://github.com/sktime/sktime)** (9.9k+ stars) — unified Python framework for time series ML, a NumFOCUS-affiliated project
+- [#10656 [ENH] Add second test parameter set for PaddingTransformer](https://github.com/sktime/sktime/pull/10656) — merged. The transformer's test suite ran under a single parameter configuration, leaving a second valid config path unexercised by CI.
+- [#10657 [ENH] Add second test parameter set for DilationMappingTransformer](https://github.com/sktime/sktime/pull/10657) — merged. Same coverage gap, different estimator.
+- Open: [#10668](https://github.com/sktime/sktime/pull/10668) `EmpiricalDistributionForecaster`, a naive empirical-distribution forecaster requested on the project's public wishlist, [#10756](https://github.com/sktime/sktime/pull/10756) a second test parameter set for `RandomSamplesAugmenter`.
 
 **⭐ [CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ stars) — MCP server + CLI that indexes local code into a graph database for AI assistant context
 - [#1453 fix(viz): handle real FalkorDB Node/Edge shape in offline renderer](https://github.com/CodeGraphContext/CodeGraphContext/pull/1453) — merged. The offline graph renderer assumed a shape FalkorDB never actually returns, breaking visualization.
