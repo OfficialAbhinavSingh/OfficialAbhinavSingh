@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#30](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/30) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-2. 🎉 Merged PR [#16](https://github.com/mergit-io/Mergit-proto/pull/16) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-3. 🎉 Merged PR [#18](https://github.com/mergit-io/Mergit-proto/pull/18) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-4. 💪 Opened PR [#18](https://github.com/mergit-io/Mergit-proto/pull/18) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-5. 🗣 Commented on [#26](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/26#issuecomment-5294782392) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. ❌ Closed PR [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+2. 🗣 Commented on [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40#issuecomment-5302640699) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+3. ❌ Closed PR [#38](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/38) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+4. 🗣 Commented on [#38](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/38#issuecomment-5302409233) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+5. ❌ Closed PR [#36](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/36) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
