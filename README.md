@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-2. 🗣 Commented on [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40#issuecomment-5302640699) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-3. ❌ Closed PR [#38](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/38) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-4. 🗣 Commented on [#38](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/38#issuecomment-5302409233) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-5. ❌ Closed PR [#36](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/36) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. 💪 Opened PR [#10843](https://github.com/sktime/sktime/pull/10843) in [sktime/sktime](https://github.com/sktime/sktime)
+2. 🗣 Commented on [#10668](https://github.com/sktime/sktime/pull/10668#issuecomment-5312072145) in [sktime/sktime](https://github.com/sktime/sktime)
+3. 🎉 Merged PR [#10](https://github.com/Litica-AI/litica-sdk/pull/10) in [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk)
+4. ❌ Closed PR [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+5. 🗣 Commented on [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40#issuecomment-5302640699) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
