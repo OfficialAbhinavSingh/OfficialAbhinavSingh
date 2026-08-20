@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#10853](https://github.com/sktime/sktime/pull/10853) in [sktime/sktime](https://github.com/sktime/sktime)
-2. 💪 Opened PR [#10843](https://github.com/sktime/sktime/pull/10843) in [sktime/sktime](https://github.com/sktime/sktime)
-3. 🗣 Commented on [#10668](https://github.com/sktime/sktime/pull/10668#issuecomment-5312072145) in [sktime/sktime](https://github.com/sktime/sktime)
-4. 🎉 Merged PR [#10](https://github.com/Litica-AI/litica-sdk/pull/10) in [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk)
-5. ❌ Closed PR [#40](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/40) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. 🗣 Commented on [#19](https://github.com/Ritesh381/Scaler-extension/pull/19#issuecomment-5344315742) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
+2. 💪 Opened PR [#33](https://github.com/Ritesh381/Scaler-extension/pull/33) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
+3. 💪 Opened PR [#21](https://github.com/mergit-io/Mergit-proto/pull/21) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+4. 🗣 Commented on [#19](https://github.com/mergit-io/Mergit-proto/pull/19#issuecomment-5338106900) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+5. 💪 Opened PR [#20](https://github.com/mergit-io/Mergit-proto/pull/20) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
