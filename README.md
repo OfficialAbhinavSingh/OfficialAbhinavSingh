@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#19](https://github.com/Ritesh381/Scaler-extension/pull/19#issuecomment-5344315742) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
-2. 💪 Opened PR [#33](https://github.com/Ritesh381/Scaler-extension/pull/33) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
-3. 💪 Opened PR [#21](https://github.com/mergit-io/Mergit-proto/pull/21) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-4. 🗣 Commented on [#19](https://github.com/mergit-io/Mergit-proto/pull/19#issuecomment-5338106900) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-5. 💪 Opened PR [#20](https://github.com/mergit-io/Mergit-proto/pull/20) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+1. ❗ Opened issue [#7047](https://github.com/mem0ai/mem0/issues/7047) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. 💪 Opened PR [#7046](https://github.com/mem0ai/mem0/pull/7046) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+3. 💪 Opened PR [#7045](https://github.com/mem0ai/mem0/pull/7045) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+4. ❌ Closed PR [#6917](https://github.com/mem0ai/mem0/pull/6917) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. 🗣 Commented on [#6917](https://github.com/mem0ai/mem0/pull/6917#issuecomment-5354815590) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
