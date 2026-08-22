@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#7047](https://github.com/mem0ai/mem0/issues/7047) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. 💪 Opened PR [#7046](https://github.com/mem0ai/mem0/pull/7046) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 💪 Opened PR [#7045](https://github.com/mem0ai/mem0/pull/7045) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. ❌ Closed PR [#6917](https://github.com/mem0ai/mem0/pull/6917) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-5. 🗣 Commented on [#6917](https://github.com/mem0ai/mem0/pull/6917#issuecomment-5354815590) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. ❗ Opened issue [#7051](https://github.com/mem0ai/mem0/issues/7051) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+2. ❗ Opened issue [#7047](https://github.com/mem0ai/mem0/issues/7047) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+3. 💪 Opened PR [#7046](https://github.com/mem0ai/mem0/pull/7046) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+4. 💪 Opened PR [#7045](https://github.com/mem0ai/mem0/pull/7045) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+5. ❌ Closed PR [#6917](https://github.com/mem0ai/mem0/pull/6917) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
