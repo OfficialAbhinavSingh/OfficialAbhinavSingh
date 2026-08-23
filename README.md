@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#7051](https://github.com/mem0ai/mem0/issues/7051) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. ❗ Opened issue [#7047](https://github.com/mem0ai/mem0/issues/7047) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 💪 Opened PR [#7046](https://github.com/mem0ai/mem0/pull/7046) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. 💪 Opened PR [#7045](https://github.com/mem0ai/mem0/pull/7045) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-5. ❌ Closed PR [#6917](https://github.com/mem0ai/mem0/pull/6917) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 💪 Opened PR [#29](https://github.com/mergit-io/Mergit-proto/pull/29) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+2. ❌ Closed PR [#20](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/20) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+3. 🗣 Commented on [#20](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/20#issuecomment-5381999242) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+4. ❌ Closed PR [#24](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/24) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+5. 🗣 Commented on [#24](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/24#issuecomment-5381999111) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
