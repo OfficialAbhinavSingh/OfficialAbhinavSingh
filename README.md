@@ -32,7 +32,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 | Project | What it does |
 |---|---|
-| [**bah2026-ps14**](https://github.com/OfficialAbhinavSingh/bah2026-ps14) | ISRO BAH 2026 PS14 — forecasts >2 MeV electron flux at GEO orbit 30–45min/6h/12h ahead via a 5-stage pipeline (persistence → RandomForest → LSTM/Transformer), validated against ISRO GRASP/GSAT |
+| [**Mergit**](https://github.com/mergit-io/mergit) | AI agent workspace where agents complete real dev/GitHub tasks and generate on-chain proof of work, identity, reputation, and accountability |
 | [**Proxim**](https://github.com/OfficialAbhinavSingh/Proxim) | Real-time AI HCP roleplay avatar trainer for pharma sales reps — live voice sessions, 3D avatar, post-call coaching scorecard |
 | [**SQL-Query-Optimization-Environment**](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment) | RL environment where agents rewrite slow SQL, graded on real DuckDB execution timing + correctness across 5 anti-pattern task types |
 | [**et-hackathon-ps7**](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7) | AI platform detecting behavioral anomalies in network/host telemetry — not signature-based |
