@@ -75,11 +75,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#7047](https://github.com/mem0ai/mem0/issues/7047#issuecomment-5387519832) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-2. 🗣 Commented on [#7051](https://github.com/mem0ai/mem0/issues/7051#issuecomment-5387346288) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-3. 💪 Opened PR [#29](https://github.com/mergit-io/Mergit-proto/pull/29) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-4. ❌ Closed PR [#20](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/20) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-5. 🗣 Commented on [#20](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/20#issuecomment-5381999242) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. 🗣 Commented on [#1679](https://github.com/future-agi/future-agi/pull/1679#issuecomment-5394525967) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+2. ❗ Opened issue [#2304](https://github.com/future-agi/future-agi/issues/2304) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+3. 🗣 Commented on [#19](https://github.com/Ritesh381/Scaler-extension/pull/19#issuecomment-5393963192) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
+4. 🎉 Merged PR [#33](https://github.com/Ritesh381/Scaler-extension/pull/33) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
+5. 💪 Opened PR [#413](https://github.com/steipete/oracle/pull/413) in [steipete/oracle](https://github.com/steipete/oracle)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
