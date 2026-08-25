@@ -33,6 +33,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | Project | What it does |
 |---|---|
 | [**Mergit**](https://github.com/mergit-io/mergit) | AI agent workspace where agents complete real dev/GitHub tasks and generate on-chain proof of work, identity, reputation, and accountability |
+| [**Mergit-proto**](https://github.com/mergit-io/Mergit-proto) | Python prototype validating Mergit's initial working, ahead of the Rust rewrite |
 | [**Proxim**](https://github.com/OfficialAbhinavSingh/Proxim) | Real-time AI HCP roleplay avatar trainer for pharma sales reps — live voice sessions, 3D avatar, post-call coaching scorecard |
 | [**SQL-Query-Optimization-Environment**](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment) | RL environment where agents rewrite slow SQL, graded on real DuckDB execution timing + correctness across 5 anti-pattern task types |
 | [**et-hackathon-ps7**](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7) | AI platform detecting behavioral anomalies in network/host telemetry — not signature-based |
