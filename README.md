@@ -61,11 +61,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#417](https://github.com/steipete/oracle/pull/417) in [steipete/oracle](https://github.com/steipete/oracle)
-2. 💪 Opened PR [#416](https://github.com/steipete/oracle/pull/416) in [steipete/oracle](https://github.com/steipete/oracle)
-3. 🗣 Commented on [#1679](https://github.com/future-agi/future-agi/pull/1679#issuecomment-5394525967) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
-4. ❗ Opened issue [#2304](https://github.com/future-agi/future-agi/issues/2304) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
-5. 🗣 Commented on [#19](https://github.com/Ritesh381/Scaler-extension/pull/19#issuecomment-5393963192) in [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension)
+1. 🗣 Commented on [#115086](https://github.com/openclaw/openclaw/pull/115086#issuecomment-5415189940) in [openclaw/openclaw](https://github.com/openclaw/openclaw)
+2. 💪 Opened PR [#417](https://github.com/steipete/oracle/pull/417) in [steipete/oracle](https://github.com/steipete/oracle)
+3. 💪 Opened PR [#416](https://github.com/steipete/oracle/pull/416) in [steipete/oracle](https://github.com/steipete/oracle)
+4. 🗣 Commented on [#1679](https://github.com/future-agi/future-agi/pull/1679#issuecomment-5394525967) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
+5. ❗ Opened issue [#2304](https://github.com/future-agi/future-agi/issues/2304) in [future-agi/future-agi](https://github.com/future-agi/future-agi)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
