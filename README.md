@@ -61,11 +61,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#589](https://github.com/sktime/skbase/pull/589) in [sktime/skbase](https://github.com/sktime/skbase)
-2. 🎉 Merged PR [#413](https://github.com/steipete/oracle/pull/413) in [steipete/oracle](https://github.com/steipete/oracle)
-3. ❗ Opened issue [#7157](https://github.com/mem0ai/mem0/issues/7157) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. 🗣 Commented on [#10756](https://github.com/sktime/sktime/pull/10756#issuecomment-5450086859) in [sktime/sktime](https://github.com/sktime/sktime)
-5. 🗣 Commented on [#10843](https://github.com/sktime/sktime/pull/10843#issuecomment-5450087119) in [sktime/sktime](https://github.com/sktime/sktime)
+1. 🗣 Commented on [#10843](https://github.com/sktime/sktime/pull/10843#issuecomment-5473768333) in [sktime/sktime](https://github.com/sktime/sktime)
+2. 💪 Opened PR [#10965](https://github.com/sktime/sktime/pull/10965) in [sktime/sktime](https://github.com/sktime/sktime)
+3. ❗ Opened issue [#10964](https://github.com/sktime/sktime/issues/10964) in [sktime/sktime](https://github.com/sktime/sktime)
+4. 💪 Opened PR [#10963](https://github.com/sktime/sktime/pull/10963) in [sktime/sktime](https://github.com/sktime/sktime)
+5. 🗣 Commented on [#10782](https://github.com/sktime/sktime/issues/10782#issuecomment-5470340666) in [sktime/sktime](https://github.com/sktime/sktime)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
