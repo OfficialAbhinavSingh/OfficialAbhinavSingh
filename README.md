@@ -63,11 +63,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#555](https://github.com/sktime/sktime-mcp/pull/555) in [sktime/sktime-mcp](https://github.com/sktime/sktime-mcp)
-2. ❗ Opened issue [#554](https://github.com/sktime/sktime-mcp/issues/554) in [sktime/sktime-mcp](https://github.com/sktime/sktime-mcp)
-3. 💪 Opened PR [#7204](https://github.com/mem0ai/mem0/pull/7204) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
-4. 🗣 Commented on [#10963](https://github.com/sktime/sktime/pull/10963#issuecomment-5494099018) in [sktime/sktime](https://github.com/sktime/sktime)
-5. 🎉 Merged PR [#417](https://github.com/steipete/oracle/pull/417) in [steipete/oracle](https://github.com/steipete/oracle)
+1. 🗣 Commented on [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2#issuecomment-5516190273) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
+2. ❌ Closed PR [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
+3. 🎉 Merged PR [#1](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/1) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
+4. 🎉 Merged PR [#1689](https://github.com/CodeGraphContext/CodeGraphContext/pull/1689) in [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)
+5. ❗ Opened issue [#1314](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/issues/1314) in [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
