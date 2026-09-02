@@ -7,7 +7,7 @@
 CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
 
 <p align="center">
-  🏆 <b>24 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (20k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (64k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (9.9k+ ⭐, 2) · +3 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>28 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (20k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (64k+ ⭐, 4) · <a href="https://github.com/steipete/oracle">steipete/oracle</a> (3.8k+ ⭐, 3) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (9.9k+ ⭐, 2) · +3 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 </p>
 
 <p align="center">
@@ -22,6 +22,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 - 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
 - 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (20k+ ⭐) — 14 PRs merged, incl. a macOS Keychain fix ([#2102](https://github.com/steipete/CodexBar/pull/2102)) and the `codexbar guard` CLI ([#2237](https://github.com/steipete/CodexBar/pull/2237))
 - 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (64k+ ⭐), **[sktime/sktime](https://github.com/sktime/sktime)** (9.9k+ ⭐), **[CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** (2.5k+ ⭐) and **[Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk)** — scope-isolation, vector-store scoring, estimator test-parameter coverage, graph-viz bugs, and RL env client fixes, each with red→green regression tests
+- 🔎 Contributor on **[steipete/oracle](https://github.com/steipete/oracle)** (3.8k+ ⭐) — 3 PRs merged: reaping dead browser sessions when the controller process is gone ([#413](https://github.com/steipete/oracle/pull/413)), plus two guards against silent locale drift in test word lists ([#416](https://github.com/steipete/oracle/pull/416), [#417](https://github.com/steipete/oracle/pull/417))
 - ✉️ Invited by co-founder Nikhil Pareek to contribute to **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — 4 PRs open on the LLM eval & observability platform
 
 ## 🌐 Socials
@@ -44,8 +45,9 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 |---|---|---|
 | [steipete/CodexBar](https://github.com/steipete/CodexBar) | 20k+ | [14](https://github.com/steipete/CodexBar/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 64k+ | [4](https://github.com/mem0ai/mem0/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [steipete/oracle](https://github.com/steipete/oracle) | 3.8k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [sktime/sktime](https://github.com/sktime/sktime) | 9.9k+ | [2](https://github.com/sktime/sktime/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) | 4k+ | [2](https://github.com/CodeGraphContext/CodeGraphContext/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) | 4k+ | [3](https://github.com/CodeGraphContext/CodeGraphContext/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | 2.5k+ | [1](https://github.com/huggingface/OpenEnv/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk) | early-stage | [1](https://github.com/Litica-AI/litica-sdk/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 
