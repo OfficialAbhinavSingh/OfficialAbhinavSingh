@@ -63,11 +63,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2#issuecomment-5516190273) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
-2. ❌ Closed PR [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
-3. 🎉 Merged PR [#1](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/1) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
-4. 🎉 Merged PR [#1689](https://github.com/CodeGraphContext/CodeGraphContext/pull/1689) in [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)
-5. ❗ Opened issue [#1314](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/issues/1314) in [open-telemetry/opentelemetry-go-compile-instrumentation](https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation)
+1. 🗣 Commented on [#10843](https://github.com/sktime/sktime/pull/10843#issuecomment-5545643155) in [sktime/sktime](https://github.com/sktime/sktime)
+2. 🎉 Merged PR [#10965](https://github.com/sktime/sktime/pull/10965) in [sktime/sktime](https://github.com/sktime/sktime)
+3. 🎉 Merged PR [#10963](https://github.com/sktime/sktime/pull/10963) in [sktime/sktime](https://github.com/sktime/sktime)
+4. 🗣 Commented on [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2#issuecomment-5516190273) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
+5. ❌ Closed PR [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
