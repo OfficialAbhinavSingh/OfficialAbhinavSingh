@@ -63,11 +63,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#10695](https://github.com/sktime/sktime/issues/10695#issuecomment-5553537505) in [sktime/sktime](https://github.com/sktime/sktime)
-2. 🗣 Commented on [#10843](https://github.com/sktime/sktime/pull/10843#issuecomment-5545643155) in [sktime/sktime](https://github.com/sktime/sktime)
-3. 🎉 Merged PR [#10965](https://github.com/sktime/sktime/pull/10965) in [sktime/sktime](https://github.com/sktime/sktime)
-4. 🎉 Merged PR [#10963](https://github.com/sktime/sktime/pull/10963) in [sktime/sktime](https://github.com/sktime/sktime)
-5. 🗣 Commented on [#2](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment/pull/2#issuecomment-5516190273) in [OfficialAbhinavSingh/SQL-Query-Optimization-Environment](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)
+1. 🎉 Merged PR [#483](https://github.com/modelcontextprotocol/conformance/pull/483) in [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance)
+2. 🗣 Commented on [#554](https://github.com/sktime/sktime-mcp/issues/554#issuecomment-5560705326) in [sktime/sktime-mcp](https://github.com/sktime/sktime-mcp)
+3. 🗣 Commented on [#10695](https://github.com/sktime/sktime/issues/10695#issuecomment-5553537505) in [sktime/sktime](https://github.com/sktime/sktime)
+4. 🗣 Commented on [#10843](https://github.com/sktime/sktime/pull/10843#issuecomment-5545643155) in [sktime/sktime](https://github.com/sktime/sktime)
+5. 🎉 Merged PR [#10965](https://github.com/sktime/sktime/pull/10965) in [sktime/sktime](https://github.com/sktime/sktime)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
