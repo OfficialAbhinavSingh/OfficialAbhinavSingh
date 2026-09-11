@@ -9,6 +9,13 @@ on:
     branches: [main]
   workflow_dispatch: {}
 
+# Two overlapping runs both try to push a README commit, and the loser fails on
+# a non-fast-forward. Queue them instead: let the in-flight run finish rather
+# than cancelling it, since it may already be mid-push.
+concurrency:
+  group: live-update
+  cancel-in-progress: false
+
 jobs:
   snake:
     runs-on: ubuntu-latest
