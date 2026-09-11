@@ -71,11 +71,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#53](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/53) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-2. ❌ Closed PR [#52](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/52) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-3. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5616129265) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-4. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5614914016) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
-5. 🗣 Commented on [#1011](https://github.com/huggingface/OpenEnv/pull/1011#issuecomment-5614499422) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+1. ❗ Opened issue [#11092](https://github.com/sktime/sktime/issues/11092) in [sktime/sktime](https://github.com/sktime/sktime)
+2. ❌ Closed PR [#53](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/53) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+3. ❌ Closed PR [#52](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/52) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+4. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5616129265) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+5. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5614914016) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
