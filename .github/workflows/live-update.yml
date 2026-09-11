@@ -40,6 +40,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      # This action rewrites the README's activity section and pushes its own
+      # commit, so it has to run *before* we touch the README — otherwise our
+      # push lands first and this step's stale copy reverts the generated
+      # upstream blocks.
+      - uses: jamesgeorge007/github-activity-readme@v0.5.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Pick up the activity commit, so our own commit builds on it and the
+      # push below is a fast-forward.
+      - run: git pull --rebase --autostash
+      # Regenerates neofetch-{dark,light}.svg and, from the same single pass
+      # over UPSTREAM_REPOS, the README's upstream headline and contributions
+      # table — one query, one number, so the card and the README agree.
       - id: render
         run: python3 scripts/update_neofetch.py
         env:
@@ -48,10 +62,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add neofetch-dark.svg neofetch-light.svg
-          git commit -m ":zap: Update neofetch stats card"
+          git add neofetch-dark.svg neofetch-light.svg README.md
+          git commit -m ":zap: Update neofetch stats card and upstream PR counts"
           git push
-      - uses: jamesgeorge007/github-activity-readme@v0.5.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMITTER_TOKEN: ${{ secrets.GITHUB_TOKEN }}

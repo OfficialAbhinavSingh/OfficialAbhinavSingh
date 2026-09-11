@@ -1,11 +1,22 @@
 #!/usr/bin/env python3
-"""Regenerate neofetch-{dark,light}.svg with real, live GitHub data.
+"""Regenerate the profile's live numbers: the neofetch card and the README.
 
 Run on a schedule by .github/workflows/live-update.yml. Pulls public stats
 for OfficialAbhinavSingh via the GitHub GraphQL API (the workflow's default
 GITHUB_TOKEN is enough — everything read here is public profile data) and
-renders them into a neofetch-style card. Only writes the files if the
-rendered content actually changed, so the workflow can skip an empty commit.
+writes two things:
+
+  * neofetch-{dark,light}.svg — the neofetch-style stats card
+  * README.md — the blocks between <!--START:upstream-headline--> and
+    <!--START:upstream-table--> and their matching END markers
+
+Both are derived from one pass over UPSTREAM_REPOS, so the count on the card
+and the count in the README are the same number by construction. Edit that
+list, not the generated README blocks — anything written between the markers
+by hand is overwritten on the next run.
+
+Only writes a file if its rendered content actually changed, so the workflow
+can skip an empty commit.
 """
 
 import datetime
@@ -70,23 +81,50 @@ query($org: String!) {
 }
 """
 
-# Upstream pull requests: counted only over projects owned by someone else, so
-# the number means "PRs other maintainers merged", not "PRs I merged into my own
-# repos". Add a repo here when a contribution lands somewhere new.
+# Upstream pull requests: the single source of truth for every "PRs merged
+# upstream" number on this profile — the neofetch card AND the README headline
+# and contributions table are all generated from this one list, so they cannot
+# drift apart.
+#
+# Membership rule: repositories maintained by someone else, where a PR of mine
+# was reviewed and merged by a maintainer who isn't me. That deliberately
+# excludes:
+#   * my own repos and my own org (mergit-io) — self-merges aren't upstream work
+#   * hackathon repos owned by a teammate (PhongCT1105/Hack-Research,
+#     Viscous106/nodeLive) — same team, so the merge isn't an outside review
+#
+# Add a repo here when a contribution lands somewhere new; everything else
+# updates itself on the next scheduled run.
 UPSTREAM_REPOS = [
     "steipete/CodexBar",
     "mem0ai/mem0",
-    "huggingface/OpenEnv",
     "sktime/sktime",
+    "steipete/oracle",
+    "CodeGraphContext/CodeGraphContext",
+    "Ritesh381/Scaler-extension",
+    "modelcontextprotocol/conformance",
+    "huggingface/OpenEnv",
+    "Litica-AI/litica-sdk",
+    "ShivenduShivu/MemoryLayer_for_Agents",
+    # Open PRs only so far — they contribute 0 to the merged count, but keeping
+    # them here means the "open" figure on the card stays honest too.
     "future-agi/future-agi",
     "openclaw/openclaw",
     "andrewyng/openworker",
-    "Ritesh381/Scaler-extension",
-    "ShivenduShivu/MemoryLayer_for_Agents",
     "ML4SCI/DeepLense-AI-Scientist",
     "mwt5345/DeepLenseSim",
-    "CodeGraphContext/CodeGraphContext",
+    "sktime/skbase",
+    "sailingsam/tryjarvis",
 ]
+
+# Per-repo detail used to build the README table: merged count + live star count.
+REPO_DETAIL_QUERY = """
+query($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    stargazerCount
+  }
+}
+"""
 
 PR_COUNT_QUERY = """
 query($q: String!) {
@@ -138,17 +176,101 @@ def fetch_org_commits(token: str, org_id: str) -> int:
         return 0
 
 
-def fetch_upstream_prs(token: str) -> tuple[int, int]:
-    """Return (merged, open) PR counts across UPSTREAM_REPOS."""
-    scope = " ".join(f"repo:{r}" for r in UPSTREAM_REPOS)
-    counts = []
-    for state in ("is:merged", "is:open"):
-        q = f"author:{USERNAME} type:pr {state} {scope}"
+def fetch_repo_breakdown(token: str) -> list[dict]:
+    """Per-repo merged/open PR counts and star counts across UPSTREAM_REPOS.
+
+    Returns rows sorted by merged count (then stars), which is the order the
+    README table and the headline's "top repos" list both use.
+    """
+    rows = []
+    for full_name in UPSTREAM_REPOS:
+        owner, name = full_name.split("/", 1)
+        merged = open_ = 0
+        for state, key in (("is:merged", "merged"), ("is:open", "open")):
+            q = f"author:{USERNAME} type:pr {state} repo:{full_name}"
+            try:
+                n = _graphql(token, PR_COUNT_QUERY, {"q": q})["search"]["issueCount"]
+            except Exception:
+                n = 0
+            if key == "merged":
+                merged = n
+            else:
+                open_ = n
         try:
-            counts.append(_graphql(token, PR_COUNT_QUERY, {"q": q})["search"]["issueCount"])
+            stars = _graphql(
+                token, REPO_DETAIL_QUERY, {"owner": owner, "name": name}
+            )["repository"]["stargazerCount"]
         except Exception:
-            counts.append(0)
-    return counts[0], counts[1]
+            stars = 0
+        rows.append(
+            {"repo": full_name, "merged": merged, "open": open_, "stars": stars}
+        )
+        print(f"  {full_name}: {merged} merged, {open_} open, {stars} stars")
+    rows.sort(key=lambda r: (-r["merged"], -r["stars"]))
+    return rows
+
+
+def fmt_stars(n: int) -> str:
+    """Render a star count the way the README does: 21k+, 4.1k+, 119."""
+    if n >= 10000:
+        return f"{n // 1000}k+"
+    if n >= 1000:
+        return f"{n / 1000:.1f}k+".replace(".0k", "k")
+    return str(n)
+
+
+def build_headline(rows: list[dict], total: int) -> str:
+    """The centred one-line summary above the neofetch card."""
+    merged_rows = [r for r in rows if r["merged"] > 0]
+    top = merged_rows[:4]
+    named = " · ".join(
+        f'<a href="https://github.com/{r["repo"]}">{r["repo"]}</a> '
+        f'({fmt_stars(r["stars"])} ⭐, {r["merged"]})'
+        for r in top
+    )
+    rest = len(merged_rows) - len(top)
+    more = f" · +{rest} more" if rest > 0 else ""
+    return (
+        f"  🏆 <b>{total} PRs merged upstream</b> — {named}{more}. "
+        "Each one found by reading the code, reproduced with a failing test, "
+        'then fixed. <a href="#-open-source-contributions">See the list →</a>'
+    )
+
+
+def build_table(rows: list[dict]) -> str:
+    """The Open-Source Contributions table body."""
+    lines = ["| Repo | Stars | PRs merged |", "|---|---|---|"]
+    for r in rows:
+        if r["merged"] == 0:
+            continue
+        repo = r["repo"]
+        query = f"https://github.com/{repo}/pulls?q=is%3Apr+is%3Amerged+author%3A{USERNAME}"
+        lines.append(
+            f"| [{repo}](https://github.com/{repo}) | {fmt_stars(r['stars'])} "
+            f"| [{r['merged']}]({query}) |"
+        )
+    return "\n".join(lines)
+
+
+def replace_block(text: str, name: str, body: str) -> str:
+    """Swap the content between <!--START:name--> and <!--END:name-->."""
+    start_tag, end_tag = f"<!--START:{name}-->", f"<!--END:{name}-->"
+    start, end = text.index(start_tag), text.index(end_tag)
+    return text[: start + len(start_tag)] + "\n" + body + "\n" + text[end:]
+
+
+def update_readme(repo_root: str, rows: list[dict], total: int) -> bool:
+    """Rewrite the generated README blocks. Returns True if anything changed."""
+    path = os.path.join(repo_root, "README.md")
+    with open(path, "r", encoding="utf-8") as f:
+        before = f.read()
+    after = replace_block(before, "upstream-headline", build_headline(rows, total))
+    after = replace_block(after, "upstream-table", build_table(rows))
+    if after != before:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(after)
+        return True
+    return False
 
 
 def member_since(created_at: str) -> str:
@@ -356,7 +478,12 @@ def main() -> None:
     orgs_label = ", ".join(org_names) if org_names else "(none visible)"
     print(f"personal commits: {personal_commits}  |  org commits: {org_commit_total}  |  orgs: {orgs_label}")
 
-    prs_merged, prs_open = fetch_upstream_prs(token)
+    # One pass over UPSTREAM_REPOS feeds both the card and the README, so the
+    # headline number and the table can never disagree with each other.
+    print("upstream repo breakdown:")
+    repo_rows = fetch_repo_breakdown(token)
+    prs_merged = sum(r["merged"] for r in repo_rows)
+    prs_open = sum(r["open"] for r in repo_rows)
     print(f"upstream PRs: {prs_merged} merged, {prs_open} open")
 
     values = {
@@ -384,6 +511,10 @@ def main() -> None:
             changed = True
         with open(path, "w", encoding="utf-8") as f:
             f.write(svg)
+
+    if update_readme(repo_root, repo_rows, prs_merged):
+        changed = True
+        print("README upstream blocks updated")
 
     gh_output = os.environ.get("GITHUB_OUTPUT")
     if gh_output:
