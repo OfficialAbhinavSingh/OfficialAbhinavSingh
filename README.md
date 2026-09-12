@@ -51,7 +51,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 65k+ | [4](https://github.com/mem0ai/mem0/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [sktime/sktime](https://github.com/sktime/sktime) | 10k+ | [4](https://github.com/sktime/sktime/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) | 4.2k+ | [3](https://github.com/CodeGraphContext/CodeGraphContext/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [steipete/oracle](https://github.com/steipete/oracle) | 3.9k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [steipete/oracle](https://github.com/steipete/oracle) | 4k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension) | 9 | [3](https://github.com/Ritesh381/Scaler-extension/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | 2.6k+ | [1](https://github.com/huggingface/OpenEnv/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance) | 119 | [1](https://github.com/modelcontextprotocol/conformance/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
