@@ -71,11 +71,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#45](https://github.com/mergit-io/Mergit-proto/pull/45) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-2. 💪 Opened PR [#45](https://github.com/mergit-io/Mergit-proto/pull/45) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
-3. 🗣 Commented on [#93](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/93#issuecomment-5653648174) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-4. ❌ Closed PR [#93](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/93) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
-5. ❌ Closed PR [#90](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox/pull/90) in [OfficialAbhinavSingh/mergit-e2e-sandbox](https://github.com/OfficialAbhinavSingh/mergit-e2e-sandbox)
+1. 🗣 Commented on [#1008](https://github.com/huggingface/OpenEnv/pull/1008#issuecomment-5678415130) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+2. 🗣 Commented on [#1006](https://github.com/huggingface/OpenEnv/pull/1006#issuecomment-5677542350) in [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)
+3. 💪 Opened PR [#11147](https://github.com/sktime/sktime/pull/11147) in [sktime/sktime](https://github.com/sktime/sktime)
+4. 🎉 Merged PR [#45](https://github.com/mergit-io/Mergit-proto/pull/45) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
+5. 💪 Opened PR [#45](https://github.com/mergit-io/Mergit-proto/pull/45) in [mergit-io/Mergit-proto](https://github.com/mergit-io/Mergit-proto)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
