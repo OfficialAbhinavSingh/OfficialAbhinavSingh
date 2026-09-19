@@ -54,7 +54,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | [steipete/oracle](https://github.com/steipete/oracle) | 4k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension) | 9 | [3](https://github.com/Ritesh381/Scaler-extension/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | 2.6k+ | [2](https://github.com/huggingface/OpenEnv/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance) | 125 | [1](https://github.com/modelcontextprotocol/conformance/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance) | 127 | [1](https://github.com/modelcontextprotocol/conformance/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk) | 6 | [1](https://github.com/Litica-AI/litica-sdk/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents) | 0 | [1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 <!--END:upstream-table-->
