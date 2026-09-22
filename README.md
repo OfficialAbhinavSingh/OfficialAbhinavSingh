@@ -8,7 +8,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 <p align="center">
   <!--START:upstream-headline-->
-  🏆 <b>36 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (21k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (65k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +6 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>37 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (21k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (65k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +7 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 <!--END:upstream-headline-->
 </p>
 
@@ -55,6 +55,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension) | 9 | [3](https://github.com/Ritesh381/Scaler-extension/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | 2.6k+ | [2](https://github.com/huggingface/OpenEnv/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance) | 127 | [1](https://github.com/modelcontextprotocol/conformance/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [sailingsam/tryjarvis](https://github.com/sailingsam/tryjarvis) | 14 | [1](https://github.com/sailingsam/tryjarvis/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk) | 6 | [1](https://github.com/Litica-AI/litica-sdk/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents) | 0 | [1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 <!--END:upstream-table-->
