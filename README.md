@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#17](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/17) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-2. 💪 Opened PR [#17](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/17) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-3. ℹ️ Labeled issue [#16](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/issues/16) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-4. ❗ Opened issue [#16](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/issues/16) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-5. 🗣 Commented on [#6449](https://github.com/mem0ai/mem0/pull/6449#issuecomment-5759470594) in [mem0ai/mem0](https://github.com/mem0ai/mem0)
+1. 💪 Opened PR [#23](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/23) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+2. 🎉 Merged PR [#22](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/22) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+3. 💪 Opened PR [#22](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/22) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+4. 💪 Opened PR [#9](https://github.com/Reinforce-SST/YUVI/pull/9) in [Reinforce-SST/YUVI](https://github.com/Reinforce-SST/YUVI)
+5. 🎉 Merged PR [#20](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/20) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
