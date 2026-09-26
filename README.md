@@ -8,7 +8,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 
 <p align="center">
   <!--START:upstream-headline-->
-  🏆 <b>37 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (21k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (65k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +7 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
+  🏆 <b>37 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (21k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (66k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +7 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
 <!--END:upstream-headline-->
 </p>
 
@@ -48,7 +48,7 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | Repo | Stars | PRs merged |
 |---|---|---|
 | [steipete/CodexBar](https://github.com/steipete/CodexBar) | 21k+ | [14](https://github.com/steipete/CodexBar/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 65k+ | [4](https://github.com/mem0ai/mem0/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 66k+ | [4](https://github.com/mem0ai/mem0/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [sktime/sktime](https://github.com/sktime/sktime) | 10k+ | [4](https://github.com/sktime/sktime/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) | 4.2k+ | [3](https://github.com/CodeGraphContext/CodeGraphContext/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 | [steipete/oracle](https://github.com/steipete/oracle) | 4k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
