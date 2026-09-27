@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#9](https://github.com/Reinforce-SST/YUVI/pull/9) in [Reinforce-SST/YUVI](https://github.com/Reinforce-SST/YUVI)
-2. 💪 Opened PR [#26](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/26) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-3. 🎉 Merged PR [#24](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/24) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-4. 🎉 Merged PR [#25](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/25) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-5. 💪 Opened PR [#25](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/25) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+1. ℹ️ Labeled PR [#26](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/26) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+2. 💪 Opened PR [#6](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/6) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
+3. 💪 Opened PR [#5](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/5) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
+4. 💪 Opened PR [#4](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/4) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
+5. ❌ Closed PR [#3](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/3) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
