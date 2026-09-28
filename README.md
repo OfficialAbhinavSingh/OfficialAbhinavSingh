@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ℹ️ Labeled PR [#26](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/26) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-2. 💪 Opened PR [#6](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/6) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
-3. 💪 Opened PR [#5](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/5) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
-4. 💪 Opened PR [#4](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/4) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
-5. ❌ Closed PR [#3](https://github.com/OfficialAbhinavSingh/forgeproven-target/pull/3) in [OfficialAbhinavSingh/forgeproven-target](https://github.com/OfficialAbhinavSingh/forgeproven-target)
+1. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859234501) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+2. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859216974) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+3. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859189893) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+4. 🎉 Merged PR [#33](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/33) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+5. 💪 Opened PR [#33](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/33) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
