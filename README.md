@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859234501) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-2. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859216974) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-3. 🗣 Commented on [#35](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/35#issuecomment-5859189893) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-4. 🎉 Merged PR [#33](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/33) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-5. 💪 Opened PR [#33](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/33) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+1. ❌ Closed PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
+2. 💪 Opened PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
+3. 🗣 Commented on [#2](https://github.com/mrinal1224/Social-Media-A-2029/issues/2#issuecomment-5883903592) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
+4. 💪 Opened PR [#14](https://github.com/Reinforce-SST/YUVI/pull/14) in [Reinforce-SST/YUVI](https://github.com/Reinforce-SST/YUVI)
+5. 💪 Opened PR [#37](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/37) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
