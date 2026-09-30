@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
-2. 💪 Opened PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
-3. 🗣 Commented on [#2](https://github.com/mrinal1224/Social-Media-A-2029/issues/2#issuecomment-5883903592) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
-4. 💪 Opened PR [#14](https://github.com/Reinforce-SST/YUVI/pull/14) in [Reinforce-SST/YUVI](https://github.com/Reinforce-SST/YUVI)
-5. 💪 Opened PR [#37](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/37) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+1. 🎉 Merged PR [#37](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/37) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+2. 🎉 Merged PR [#14](https://github.com/Reinforce-SST/YUVI/pull/14) in [Reinforce-SST/YUVI](https://github.com/Reinforce-SST/YUVI)
+3. ❌ Closed PR [#36](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/36) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+4. ❌ Closed PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
+5. 💪 Opened PR [#3](https://github.com/mrinal1224/Social-Media-A-2029/pull/3) in [mrinal1224/Social-Media-A-2029](https://github.com/mrinal1224/Social-Media-A-2029)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
