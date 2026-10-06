@@ -72,11 +72,11 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 ## 🔴 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#13](https://github.com/andreumassanet/impasto/pull/13) in [andreumassanet/impasto](https://github.com/andreumassanet/impasto)
-2. 💪 Opened PR [#13](https://github.com/andreumassanet/impasto/pull/13) in [andreumassanet/impasto](https://github.com/andreumassanet/impasto)
-3. 🎉 Merged PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-4. 💪 Opened PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
-5. 🎉 Merged PR [#52](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/52) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+1. 💪 Opened PR [#57](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/57) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+2. 🎉 Merged PR [#13](https://github.com/andreumassanet/impasto/pull/13) in [andreumassanet/impasto](https://github.com/andreumassanet/impasto)
+3. 💪 Opened PR [#13](https://github.com/andreumassanet/impasto/pull/13) in [andreumassanet/impasto](https://github.com/andreumassanet/impasto)
+4. 🎉 Merged PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
+5. 💪 Opened PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 <!--END_SECTION:activity-->
 
 ## 🐍 Contribution Snake
