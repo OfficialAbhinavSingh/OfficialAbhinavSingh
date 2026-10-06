@@ -1,15 +1,16 @@
-<h1 align="center">Hi, I'm Abhinav Singh 👋</h1>
+<h1 align="center">Abhinav Singh</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=560&lines=AI%2FML+Developer;Agentic+AI+Builder;BITS+Pilani+CS+Undergrad;Building+Autonomous+Agents" alt="Typing SVG" />
+  <samp>
+    <a href="https://github.com/OfficialAbhinavSingh?tab=repositories">projects</a> ·
+    <a href="https://linkedin.com/in/abhinavsingh7">linkedin</a> ·
+    <a href="https://x.com/zenitsu_uchiha1">x</a> ·
+    <a href="mailto:laterabhi1@gmail.com">email</a>
+  </samp>
 </p>
 
-CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Learning • LLM Applications
-
 <p align="center">
-  <!--START:upstream-headline-->
-  🏆 <b>37 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (22k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (66k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +7 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#-open-source-contributions">See the list →</a>
-<!--END:upstream-headline-->
+  <samp>CS undergrad · AI/ML and agentic systems · Arch Linux + Hyprland</samp>
 </p>
 
 <p align="center">
@@ -18,31 +19,20 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
     <img alt="Abhinav's neofetch card — Arch Linux + Hyprland, live GitHub stats" src="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/neofetch-light.svg">
   </picture>
 </p>
-<p align="center"><sub>auto-refreshed daily via <a href="https://github.com/OfficialAbhinavSingh/OfficialAbhinavSingh/blob/main/.github/workflows/live-update.yml">GitHub Actions</a> — real repo/star/follower/commit counts, no fake numbers</sub></p>
+<p align="center"><sub>regenerated daily from the GitHub API by <a href="https://github.com/OfficialAbhinavSingh/OfficialAbhinavSingh/blob/main/.github/workflows/live-update.yml">a workflow in this repo</a> — real counts, nothing hand-written</sub></p>
 
-**Currently:**
-- 🔭 Building **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational lensing research (Pydantic AI)
-- 🏆 Contributor on **[steipete/CodexBar](https://github.com/steipete/CodexBar)** (21k+ ⭐) — 14 PRs merged, incl. the `codexbar guard` and `codexbar hooks watch` CLIs ([#2237](https://github.com/steipete/CodexBar/pull/2237), [#2536](https://github.com/steipete/CodexBar/pull/2536)) and a bound on the whole HTTP request head, not just each individual read ([#2684](https://github.com/steipete/CodexBar/pull/2684))
-- 🧩 Shipping fixes into **[mem0ai/mem0](https://github.com/mem0ai/mem0)** (65k+ ⭐), **[sktime/sktime](https://github.com/sktime/sktime)** (10k+ ⭐), **[CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext)** (4.1k+ ⭐), **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** (2.5k+ ⭐) and **[Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk)** — scope-isolation, vector-store scoring, estimator test-parameter coverage, graph-viz bugs, and RL env client fixes, each with red→green regression tests
-- 🔎 Contributor on **[steipete/oracle](https://github.com/steipete/oracle)** (3.9k+ ⭐) — 3 PRs merged: reaping dead browser sessions when the controller process is gone ([#413](https://github.com/steipete/oracle/pull/413)), plus two guards against silent locale drift in test word lists ([#416](https://github.com/steipete/oracle/pull/416), [#417](https://github.com/steipete/oracle/pull/417))
-- 🔌 Merged into **[modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance)** — the official MCP conformance suite: bound negative-check verdicts to an observed prerequisite so a client auth test could no longer pass by accident ([#483](https://github.com/modelcontextprotocol/conformance/pull/483))
-- ✉️ Invited by co-founder Nikhil Pareek to contribute to **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — 4 PRs open on the LLM eval & observability platform
+<p align="center">
+  <!--START:upstream-headline-->
+  🏆 <b>37 PRs merged upstream</b> — <a href="https://github.com/steipete/CodexBar">steipete/CodexBar</a> (22k+ ⭐, 14) · <a href="https://github.com/mem0ai/mem0">mem0ai/mem0</a> (66k+ ⭐, 4) · <a href="https://github.com/sktime/sktime">sktime/sktime</a> (10k+ ⭐, 4) · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext/CodeGraphContext</a> (4.2k+ ⭐, 3) · +7 more. Each one found by reading the code, reproduced with a failing test, then fixed. <a href="#open-source">See the list →</a>
+<!--END:upstream-headline-->
+</p>
 
-## 🌐 Socials
+## Open Source
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/later_abhi) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/abhinavsingh7) [![Quora](https://img.shields.io/badge/Quora-%23B92B27.svg?logo=Quora&logoColor=white)](https://quora.com/profile/Abhinav-Singh-6901) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Remarkable_Pepper774) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/@zenitsu_uchiha1) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:laterabhi1@gmail.com)
-
-## 🚀 Featured Projects
-
-| Project | What it does |
-|---|---|
-| [**Mergit**](https://github.com/mergit-io/mergit) | AI agent workspace where agents complete real dev/GitHub tasks and generate on-chain proof of work, identity, reputation, and accountability |
-| [**Mergit-proto**](https://github.com/mergit-io/Mergit-proto) | Python prototype validating Mergit's initial working, ahead of the Rust rewrite |
-| [**Proxim**](https://github.com/OfficialAbhinavSingh/Proxim) | Real-time AI HCP roleplay avatar trainer for pharma sales reps — live voice sessions, 3D avatar, post-call coaching scorecard |
-| [**SQL-Query-Optimization-Environment**](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment) | RL environment where agents rewrite slow SQL, graded on real DuckDB execution timing + correctness across 5 anti-pattern task types |
-| [**et-hackathon-ps7**](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7) | AI platform detecting behavioral anomalies in network/host telemetry — not signature-based |
-
-## 🔧 Open-Source Contributions
+I work mostly on other people's codebases. The pattern is the same every time: read
+until something looks wrong, reproduce it with a failing test, then send the smallest
+fix that makes the test pass. Most of these are bugs the maintainers did not know they
+had.
 
 <!--START:upstream-table-->
 | Repo | Stars | PRs merged |
@@ -60,16 +50,35 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 | [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents) | 0 | [1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
 <!--END:upstream-table-->
 
-## 💻 Tech Stack
+<sub>Counts and stars above are generated from the GitHub API on every run, so they cannot drift from reality.</sub>
 
-![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white) ![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Rust](https://img.shields.io/badge/rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Shell](https://img.shields.io/badge/shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![PyTorch](https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white) ![Jupyter](https://img.shields.io/badge/jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) ![DuckDB](https://img.shields.io/badge/duckdb-FFF000?style=for-the-badge&logo=duckdb&logoColor=black) ![Linux](https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![GitHub](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white)
+## Currently
 
-## 📈 GitHub Stats
+- **[DeepLense-AI-Scientist](https://github.com/OfficialAbhinavSingh/DeepLense-AI-Scientist)** — multi-agent framework orchestrating scientific workflows in gravitational-lensing research, built on Pydantic AI.
+- **[steipete/CodexBar](https://github.com/steipete/CodexBar)** — recognised Contributor. Shipped `codexbar guard` and `codexbar hooks watch`, two self-proposed CLI features ([#2237](https://github.com/steipete/CodexBar/pull/2237), [#2536](https://github.com/steipete/CodexBar/pull/2536)).
+- **[modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance)** — the official MCP conformance suite. Bound negative-check verdicts to an observed prerequisite, so a client auth test could no longer pass by accident ([#483](https://github.com/modelcontextprotocol/conformance/pull/483)).
+- **[future-agi/future-agi](https://github.com/future-agi/future-agi)** — contributing by invitation from co-founder Nikhil Pareek, on their LLM eval and observability platform.
+- Competitive AI track lead at Reinforce Club, SST.
 
-![](https://github-readme-stats.vercel.app/api?username=OfficialAbhinavSingh&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
-![](https://nirzak-streak-stats.vercel.app/?user=OfficialAbhinavSingh&theme=github-dark-blue&hide_border=true)
+## Selected Work
 
-## 🔴 Recent Activity
+| | |
+|---|---|
+| **[Mergit](https://github.com/mergit-io/mergit)** | Agent workspace where agents complete real dev and GitHub tasks and leave a verifiable record of what they actually did. |
+| **[SQL Query Optimization Env](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)** | RL environment where agents rewrite slow SQL, graded on real DuckDB execution time and result correctness, not string matching. |
+| **[Proxim](https://github.com/OfficialAbhinavSingh/Proxim)** | Real-time conversational avatar trainer for pharma sales reps, with live voice, a 3D avatar and a post-call coaching scorecard. |
+| **[et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)** | Behavioural anomaly detection across network and host telemetry, rather than signature matching. |
+
+## Stack
+
+<samp>
+Python · TypeScript · Swift · Rust · Go<br>
+PyTorch · FastAPI · React · Three.js<br>
+Docker · PostgreSQL · DuckDB · Redis · Celery<br>
+Linux · Hyprland · Neovim · Git
+</samp>
+
+## Recent Activity
 
 <!--START_SECTION:activity-->
 1. 💪 Opened PR [#57](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/57) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
@@ -78,8 +87,3 @@ CS Undergrad @ BITS Pilani | AI/ML Developer | GenAI • Agentic AI • Deep Lea
 4. 🎉 Merged PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 5. 💪 Opened PR [#55](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard/pull/55) in [Reinforce-SST/Reinforce-Student-Dashboard](https://github.com/Reinforce-SST/Reinforce-Student-Dashboard)
 <!--END_SECTION:activity-->
-
-## 🐍 Contribution Snake
-
-![snake gif](https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only)
-![snake gif](https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/output/github-contribution-grid-snake.svg#gh-light-mode-only)

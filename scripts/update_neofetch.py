@@ -233,7 +233,7 @@ def build_headline(rows: list[dict], total: int) -> str:
     return (
         f"  🏆 <b>{total} PRs merged upstream</b> — {named}{more}. "
         "Each one found by reading the code, reproduced with a failing test, "
-        'then fixed. <a href="#-open-source-contributions">See the list →</a>'
+        'then fixed. <a href="#open-source">See the list →</a>'
     )
 
 
