@@ -297,46 +297,80 @@ def calendar_stats(days: list[dict]) -> dict:
 
 
 def render_heatmap_svg(weeks: list[list[dict]], total: int) -> str:
-    """The contribution graph, drawn in the accent rather than GitHub green."""
-    cell, gap = 11, 3
-    left, top = 34, 52
-    w = left + len(weeks) * (cell + gap) + 20
-    h = top + 7 * (cell + gap) + 46
+    """The contribution graph.
+
+    Two things make this read cleanly rather than as a smear. Levels are
+    discrete, the way GitHub's own graph is, so a busy day is obviously
+    busier than a quiet one instead of a slightly different alpha. And the
+    cells animate in on a stagger, which only works because the animation is
+    declarative CSS: GitHub proxies this through camo as a flat <img>, so
+    anything driven by JavaScript would never run.
+    """
+    cell, step = 13, 16
+    left, top = 36, 54
+    w = left + len(weeks) * step + 22
+    h = top + 7 * step + 50
 
     peak = max((d["contributionCount"] for wk in weeks for d in wk), default=1) or 1
+    # Five steps, empty plus four intensities, thresholds on the quartiles.
+    levels = [CARD_PANEL, "#5b2d14", "#8f4419", "#c25c22", ACCENT]
+
+    def level(n: int) -> int:
+        if n <= 0:
+            return 0
+        return min(4, 1 + int(3 * (n - 1) / max(peak - 1, 1)))
+
     cells, labels = [], []
     seen: set[str] = set()
+    i = 0
     for wi, wk in enumerate(weeks):
         for d in wk:
-            x = left + wi * (cell + gap)
-            y = top + d["weekday"] * (cell + gap)
-            n = d["contributionCount"]
-            if n == 0:
-                fill, op = CARD_PANEL, "1"
-            else:
-                op = f"{0.28 + 0.72 * min(1.0, n / peak):.2f}"
-                fill = ACCENT
+            x = left + wi * step
+            y = top + d["weekday"] * step
+            lv = level(d["contributionCount"])
+            cls = "c g" if lv else "c"
             cells.append(
-                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2.5" fill="{fill}" opacity="{op}"/>'
+                f'<rect class="{cls}" x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2.5" '
+                f'fill="{levels[lv]}" style="animation-delay:{i * 0.004:.3f}s"/>'
             )
+            i += 1
         month = wk[0]["date"][:7]
         if month not in seen and wk[0]["date"][8:10] <= "07":
             seen.add(month)
             labels.append(
-                f'<text x="{left + wi * (cell + gap)}" y="{top - 8}" font-size="10px" fill="{CARD_MUTED}">'
+                f'<text class="lbl" x="{left + wi * step}" y="{top - 10}">'
                 f'{MONTHS[int(month[5:7]) - 1]}</text>'
             )
 
-    for i, lbl in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+    for wd, lbl in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         labels.append(
-            f'<text x="2" y="{top + i * (cell + gap) + 9}" font-size="9.5px" fill="{CARD_MUTED}">{lbl}</text>'
+            f'<text class="lbl" x="2" y="{top + wd * step + 10}">{lbl}</text>'
         )
+
+    legend_x = w - 150
+    legend = [f'<text class="lbl" x="{legend_x - 34}" y="{h - 16}">Less</text>']
+    for n, col in enumerate(levels):
+        legend.append(
+            f'<rect x="{legend_x + n * 16}" y="{h - 27}" width="{cell}" height="{cell}" '
+            f'rx="2.5" fill="{col}"/>'
+        )
+    legend.append(f'<text class="lbl" x="{legend_x + 5 * 16 + 4}" y="{h - 16}">More</text>')
 
     return f"""<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+<style>
+  text.lbl {{ fill:{CARD_MUTED}; font-size:11px; }}
+  .c {{ transform-box:fill-box; transform-origin:center; opacity:0;
+       animation:pop 0.5s ease-out both; }}
+  .g {{ animation:pop 0.5s ease-out both, flash 0.7s ease-out both; }}
+  @keyframes pop {{ 0%{{opacity:0;transform:scale(.2)}} 60%{{opacity:1;transform:scale(1.12)}} 100%{{opacity:1;transform:scale(1)}} }}
+  @keyframes flash {{ 0%{{filter:brightness(2.3)}} 45%{{filter:brightness(2.3)}} 100%{{filter:brightness(1)}} }}
+  @media (prefers-reduced-motion: reduce) {{ .c {{ opacity:1 !important; animation:none !important; }} }}
+</style>
 {chrome(w, h, "abhinav@github: ~/contributions")}
 {chr(10).join(labels)}
 {chr(10).join(cells)}
+{chr(10).join(legend)}
 <text x="{left}" y="{h - 16}" font-size="12px" fill="{CARD_MUTED}">
 <tspan fill="{ACCENT}" font-weight="bold">{total:,}</tspan> contributions in the last year</text>
 </svg>
