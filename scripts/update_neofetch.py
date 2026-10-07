@@ -219,6 +219,30 @@ def fmt_stars(n: int) -> str:
     return str(n)
 
 
+def render_header_svg(palette_name: str) -> str:
+    """The title banner.
+
+    Deliberately not a second neofetch card: that block is system output,
+    this one is a title. It carries the same palette and mono face so the
+    page reads as one session, but stays typographic rather than tabular.
+    """
+    p = PALETTES[palette_name]
+    w, h = CARD_WIDTH, 150
+
+    return f"""<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{w}px" height="{h}px" font-family="'Fira Code',Consolas,monospace">
+<rect width="{w}px" height="{h}px" fill="{p["bg"]}" rx="16"/>
+<rect x="40" y="46" width="4" height="58" rx="2" fill="{p["accent"]}"/>
+<text xml:space="preserve">
+  <tspan x="40" y="36" font-size="13px" fill="{p["muted"]}">~ $ whoami</tspan>
+  <tspan x="60" y="80" font-size="34px" font-weight="bold" fill="{p["text"]}">Abhinav Singh</tspan>
+  <tspan x="60" y="104" font-size="13.5px" fill="{p["accent"]}">AI/ML and agentic systems</tspan>
+  <tspan x="60" y="128" font-size="13.5px" fill="{p["muted"]}">open source contributor \u00b7 CS undergrad \u00b7 Arch Linux + Hyprland</tspan>
+</text>
+</svg>
+"""
+
+
 def render_contrib_svg(palette_name: str, rows: list[dict], total: int) -> str:
     """The upstream contributions panel, drawn in the same terminal language
     as the neofetch card.
@@ -579,6 +603,17 @@ def main() -> None:
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     changed = False
     for palette in ("dark", "light"):
+        header = render_header_svg(palette)
+        hpath = os.path.join(repo_root, f"header-{palette}.svg")
+        hold = ""
+        if os.path.exists(hpath):
+            with open(hpath, "r", encoding="utf-8") as f:
+                hold = f.read()
+        if hold != header:
+            changed = True
+        with open(hpath, "w", encoding="utf-8") as f:
+            f.write(header)
+
         contrib = render_contrib_svg(palette, repo_rows, prs_merged)
         cpath = os.path.join(repo_root, f"contributions-{palette}.svg")
         cold = ""

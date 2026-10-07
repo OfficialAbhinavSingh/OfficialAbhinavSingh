@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="780px" height="150px" font-family="'Fira Code',Consolas,monospace">
+<rect width="780px" height="150px" fill="#14100e" rx="16"/>
+<rect x="40" y="46" width="4" height="58" rx="2" fill="#f0732d"/>
+<text xml:space="preserve">
+  <tspan x="40" y="36" font-size="13px" fill="#f5efea99">~ $ whoami</tspan>
+  <tspan x="60" y="80" font-size="34px" font-weight="bold" fill="#f5efea">Abhinav Singh</tspan>
+  <tspan x="60" y="104" font-size="13.5px" fill="#f0732d">AI/ML and agentic systems</tspan>
+  <tspan x="60" y="128" font-size="13.5px" fill="#f5efea99">open source contributor · CS undergrad · Arch Linux + Hyprland</tspan>
+</text>
+</svg>

@@ -1,4 +1,9 @@
-<h1 align="center">Abhinav Singh</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/header-dark.svg">
+    <img alt="Abhinav Singh — AI/ML and agentic systems" src="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/header-light.svg">
+  </picture>
+</p>
 
 <p align="center">
   <samp>
@@ -7,10 +12,6 @@
     <a href="https://x.com/zenitsu_uchiha1">x</a> ·
     <a href="mailto:laterabhi1@gmail.com">email</a>
   </samp>
-</p>
-
-<p align="center">
-  <samp>CS undergrad · AI/ML and agentic systems · Arch Linux + Hyprland</samp>
 </p>
 
 <p align="center">
@@ -43,7 +44,7 @@ had.
 </p>
 <!--END:upstream-table-->
 
-<sub>Counts and stars above are generated from the GitHub API on every run, so they cannot drift from reality.</sub>
+<p align="center"><sub><a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh">browse every merged PR →</a> · generated from the GitHub API on each run, so these cannot drift from reality</sub></p>
 
 ## Currently
 
@@ -55,12 +56,13 @@ had.
 
 ## Selected Work
 
-| | |
-|---|---|
-| **[Mergit](https://github.com/mergit-io/mergit)** | Agent workspace where agents complete real dev and GitHub tasks and leave a verifiable record of what they actually did. |
-| **[SQL Query Optimization Env](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)** | RL environment where agents rewrite slow SQL, graded on real DuckDB execution time and result correctness, not string matching. |
-| **[Proxim](https://github.com/OfficialAbhinavSingh/Proxim)** | Real-time conversational avatar trainer for pharma sales reps, with live voice, a 3D avatar and a post-call coaching scorecard. |
-| **[et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)** | Behavioural anomaly detection across network and host telemetry, rather than signature matching. |
+**[Mergit](https://github.com/mergit-io/mergit)** — agent workspace where agents complete real dev and GitHub tasks and leave a verifiable record of what they actually did.
+
+**[SQL Query Optimization Env](https://github.com/OfficialAbhinavSingh/SQL-Query-Optimization-Environment)** — RL environment where agents rewrite slow SQL, graded on real DuckDB execution time and result correctness, not string matching.
+
+**[Proxim](https://github.com/OfficialAbhinavSingh/Proxim)** — real-time conversational avatar trainer for pharma sales reps, with live voice, a 3D avatar and a post-call coaching scorecard.
+
+**[et-hackathon-ps7](https://github.com/OfficialAbhinavSingh/et-hackathon-ps7)** — behavioural anomaly detection across network and host telemetry, rather than signature matching.
 
 ## Stack
 
