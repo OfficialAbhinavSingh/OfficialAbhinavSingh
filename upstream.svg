@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="860px" height="396px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+<rect width="860" height="396" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0 10 a10 10 0 0 1 10 -10 h840 a10 10 0 0 1 10 10 v24 h-860 z" fill="#161b22"/>
+<line x1="0" y1="34" x2="860" y2="34" stroke="#30363d"/>
+<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+<circle cx="36" cy="17" r="5" fill="#febc2e"/>
+<circle cx="54" cy="17" r="5" fill="#28c840"/>
+<text x="430" y="22" text-anchor="middle" font-size="11.5px" fill="#8b949e">abhinav@github: ~/upstream</text>
+<rect x="430" y="87" width="300" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="111" width="86" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="135" width="86" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="159" width="64" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="183" width="64" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="207" width="64" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="231" width="43" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="255" width="21" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="279" width="21" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="303" width="21" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="430" y="327" width="21" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<text x="30" y="68" font-size="12.5px" fill="#8b949e"><tspan fill="#f0732d">$</tspan> gh pr list --merged --author @me</text>
+<text x="30" y="98" font-size="12.5px" fill="#e6edf3">steipete/CodexBar</text>
+<text x="406" y="98" font-size="12.5px" fill="#8b949e" text-anchor="end">22k+ ★</text>
+<text x="740" y="98" font-size="12.5px" fill="#f0732d" font-weight="bold">14</text>
+<text x="30" y="122" font-size="12.5px" fill="#e6edf3">mem0ai/mem0</text>
+<text x="406" y="122" font-size="12.5px" fill="#8b949e" text-anchor="end">66k+ ★</text>
+<text x="526" y="122" font-size="12.5px" fill="#f0732d" font-weight="bold">4</text>
+<text x="30" y="146" font-size="12.5px" fill="#e6edf3">sktime/sktime</text>
+<text x="406" y="146" font-size="12.5px" fill="#8b949e" text-anchor="end">10k+ ★</text>
+<text x="526" y="146" font-size="12.5px" fill="#f0732d" font-weight="bold">4</text>
+<text x="30" y="170" font-size="12.5px" fill="#e6edf3">CodeGraphContext/CodeGraphContext</text>
+<text x="406" y="170" font-size="12.5px" fill="#8b949e" text-anchor="end">4.2k+ ★</text>
+<text x="504" y="170" font-size="12.5px" fill="#f0732d" font-weight="bold">3</text>
+<text x="30" y="194" font-size="12.5px" fill="#e6edf3">steipete/oracle</text>
+<text x="406" y="194" font-size="12.5px" fill="#8b949e" text-anchor="end">4k+ ★</text>
+<text x="504" y="194" font-size="12.5px" fill="#f0732d" font-weight="bold">3</text>
+<text x="30" y="218" font-size="12.5px" fill="#e6edf3">Ritesh381/Scaler-extension</text>
+<text x="406" y="218" font-size="12.5px" fill="#8b949e" text-anchor="end">9 ★</text>
+<text x="504" y="218" font-size="12.5px" fill="#f0732d" font-weight="bold">3</text>
+<text x="30" y="242" font-size="12.5px" fill="#e6edf3">huggingface/OpenEnv</text>
+<text x="406" y="242" font-size="12.5px" fill="#8b949e" text-anchor="end">2.7k+ ★</text>
+<text x="483" y="242" font-size="12.5px" fill="#f0732d" font-weight="bold">2</text>
+<text x="30" y="266" font-size="12.5px" fill="#e6edf3">modelcontextprotocol/conformance</text>
+<text x="406" y="266" font-size="12.5px" fill="#8b949e" text-anchor="end">129 ★</text>
+<text x="461" y="266" font-size="12.5px" fill="#f0732d" font-weight="bold">1</text>
+<text x="30" y="290" font-size="12.5px" fill="#e6edf3">sailingsam/tryjarvis</text>
+<text x="406" y="290" font-size="12.5px" fill="#8b949e" text-anchor="end">14 ★</text>
+<text x="461" y="290" font-size="12.5px" fill="#f0732d" font-weight="bold">1</text>
+<text x="30" y="314" font-size="12.5px" fill="#e6edf3">Litica-AI/litica-sdk</text>
+<text x="406" y="314" font-size="12.5px" fill="#8b949e" text-anchor="end">6 ★</text>
+<text x="461" y="314" font-size="12.5px" fill="#f0732d" font-weight="bold">1</text>
+<text x="30" y="338" font-size="12.5px" fill="#e6edf3">ShivenduShivu/MemoryLayer_for_Age…</text>
+<text x="406" y="338" font-size="12.5px" fill="#8b949e" text-anchor="end">0 ★</text>
+<text x="461" y="338" font-size="12.5px" fill="#f0732d" font-weight="bold">1</text>
+<text x="30" y="372" font-size="12px" fill="#8b949e"><tspan fill="#e6edf3" font-weight="bold">37 merged</tspan> across 11 upstream projects, each reproduced with a failing test first</text>
+</svg>

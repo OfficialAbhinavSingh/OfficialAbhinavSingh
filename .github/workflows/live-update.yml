@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -- README.md profile-dark.svg profile-light.svg
+          git add -- README.md contrib-heatmap.svg portrait.svg stats.svg upstream.svg
           git commit -m ":zap: Update neofetch stats card and upstream PR counts"
           git push

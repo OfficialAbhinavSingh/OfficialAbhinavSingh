@@ -219,146 +219,265 @@ def fmt_stars(n: int) -> str:
     return str(n)
 
 
-PROFILE_W = 880
+CALENDAR_QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date contributionCount weekday } }
+      }
+    }
+  }
+}
+"""
+
+# Card chrome, shared by every panel. Dark in both themes on purpose: a
+# terminal window that turns white in light mode stops reading as a terminal.
+CARD_BG = "#0d1117"
+CARD_PANEL = "#161b22"
+CARD_LINE = "#30363d"
+CARD_TEXT = "#e6edf3"
+CARD_MUTED = "#8b949e"
+ACCENT = "#f0732d"
+TITLEBAR = 34
 
 
-def render_profile_svg(palette_name: str, values: dict, rows: list[dict], total: int) -> str:
-    """The whole profile as one terminal session.
+def chrome(w: int, h: int, title: str) -> str:
+    """Traffic lights and a title bar, so each panel reads as a window."""
+    return f"""<rect width="{w}" height="{h}" rx="10" fill="{CARD_BG}" stroke="{CARD_LINE}"/>
+<path d="M0 10 a10 10 0 0 1 10 -10 h{w - 20} a10 10 0 0 1 10 10 v{TITLEBAR - 10} h-{w} z" fill="{CARD_PANEL}"/>
+<line x1="0" y1="{TITLEBAR}" x2="{w}" y2="{TITLEBAR}" stroke="{CARD_LINE}"/>
+<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+<circle cx="36" cy="17" r="5" fill="#febc2e"/>
+<circle cx="54" cy="17" r="5" fill="#28c840"/>
+<text x="{w // 2}" y="22" text-anchor="middle" font-size="11.5px" fill="{CARD_MUTED}">{title}</text>"""
 
-    Previously this was three separate images with markdown headings in
-    between, which meant the page read as documentation interrupted by art.
-    One panel, three prompts, one scrollback: the sections are separated by
-    the commands that produced them rather than by <h2> rules.
+
+def calendar_stats(days: list[dict]) -> dict:
+    """Streaks and totals from the raw calendar.
+
+    Streaks ignore today when it is still empty: a day that has not happened
+    yet should not break a run that is otherwise alive.
     """
-    p = PALETTES[palette_name]
-    x = 42
-    y = 56
-    body, bars = [], []
+    counts = [d["contributionCount"] for d in days]
+    active = [c for c in counts if c > 0]
+    total = sum(counts)
 
-    def prompt(cmd: str, yy: float) -> str:
-        return (
-            f'<tspan x="{x}" y="{yy:.0f}" font-size="14px">'
-            f'<tspan fill="{p["accent"]}" font-weight="bold">~</tspan>'
-            f'<tspan fill="{p["muted"]}"> $ </tspan>'
-            f'<tspan fill="{p["text"]}">{cmd}</tspan></tspan>'
+    longest = run = 0
+    for c in counts:
+        run = run + 1 if c > 0 else 0
+        longest = max(longest, run)
+
+    tail = counts[:-1] if counts and counts[-1] == 0 else counts
+    current = 0
+    for c in reversed(tail):
+        if c == 0:
+            break
+        current += 1
+
+    best = max(days, key=lambda d: d["contributionCount"]) if days else {"date": "", "contributionCount": 0}
+
+    months: dict[str, int] = {}
+    for d in days:
+        months.setdefault(d["date"][:7], 0)
+        months[d["date"][:7]] += d["contributionCount"]
+
+    return {
+        "total": total,
+        "current": current,
+        "longest": longest,
+        "active": len(active),
+        "days": len(counts),
+        "best": best["contributionCount"],
+        "best_date": best["date"],
+        "avg": round(total / len(active), 1) if active else 0.0,
+        "months": sorted(months.items())[-12:],
+    }
+
+
+def render_heatmap_svg(weeks: list[list[dict]], total: int) -> str:
+    """The contribution graph, drawn in the accent rather than GitHub green."""
+    cell, gap = 11, 3
+    left, top = 34, 52
+    w = left + len(weeks) * (cell + gap) + 20
+    h = top + 7 * (cell + gap) + 46
+
+    peak = max((d["contributionCount"] for wk in weeks for d in wk), default=1) or 1
+    cells, labels = [], []
+    seen: set[str] = set()
+    for wi, wk in enumerate(weeks):
+        for d in wk:
+            x = left + wi * (cell + gap)
+            y = top + d["weekday"] * (cell + gap)
+            n = d["contributionCount"]
+            if n == 0:
+                fill, op = CARD_PANEL, "1"
+            else:
+                op = f"{0.28 + 0.72 * min(1.0, n / peak):.2f}"
+                fill = ACCENT
+            cells.append(
+                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2.5" fill="{fill}" opacity="{op}"/>'
+            )
+        month = wk[0]["date"][:7]
+        if month not in seen and wk[0]["date"][8:10] <= "07":
+            seen.add(month)
+            labels.append(
+                f'<text x="{left + wi * (cell + gap)}" y="{top - 8}" font-size="10px" fill="{CARD_MUTED}">'
+                f'{MONTHS[int(month[5:7]) - 1]}</text>'
+            )
+
+    for i, lbl in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+        labels.append(
+            f'<text x="2" y="{top + i * (cell + gap) + 9}" font-size="9.5px" fill="{CARD_MUTED}">{lbl}</text>'
         )
-
-    # --- whoami -----------------------------------------------------------
-    body.append(prompt("whoami", y))
-    y += 46
-    body.append(
-        f'<tspan x="{x}" y="{y:.0f}" font-size="36px" font-weight="bold" '
-        f'fill="{p["text"]}">Abhinav Singh</tspan>'
-    )
-    y += 26
-    body.append(
-        f'<tspan x="{x}" y="{y:.0f}" font-size="14px" fill="{p["accent"]}">'
-        f'AI/ML and agentic systems</tspan>'
-    )
-    y += 22
-    body.append(
-        f'<tspan x="{x}" y="{y:.0f}" font-size="13px" fill="{p["muted"]}">'
-        f'open source contributor \u00b7 CS undergrad \u00b7 Arch Linux + Hyprland</tspan>'
-    )
-
-    # --- neofetch ---------------------------------------------------------
-    y += 54
-    body.append(prompt("neofetch", y))
-    y += 30
-    art_top = y
-    ascii_x = x + 4
-    art = []
-    ay = art_top
-    for r in ASCII_PORTRAIT:
-        art.append(f'<tspan x="{ascii_x}" y="{ay:.0f}">{r}</tspan>')
-        ay += ASCII_LH
-
-    info_x = x + 330
-    iy = art_top + 14
-    info = []
-    info.append(
-        f'<tspan x="{info_x}" y="{iy:.0f}" fill="{p["accent"]}" font-weight="bold">'
-        f'abhinav@github</tspan>'
-    )
-    iy += 24
-    info.append(f'<tspan x="{info_x}" y="{iy:.0f}" fill="{p["muted"]}">{"-" * 28}</tspan>')
-    iy += 24
-    for label, value in FIELDS_TEMPLATE:
-        info.append(row(info_x, iy, seg(p, label, value)))
-        iy += 24
-    iy += 8
-    info.append(row(info_x, iy, seg(p, "Member since", values["member_since"])))
-    iy += 24
-    info.append(
-        row(info_x, iy, seg(p, "Repos", values["repos"])
-            + f'<tspan fill="{p["muted"]}"> | </tspan>'
-            + seg(p, "Stars", values["stars"])
-            + f'<tspan fill="{p["muted"]}"> | </tspan>'
-            + seg(p, "Followers", values["followers"]))
-    )
-    iy += 24
-    info.append(row(info_x, iy, seg(p, "Commits (yr)", values["commits"])))
-    iy += 24
-    info.append(row(info_x, iy, seg(p, "Top Language", values["top_language"])))
-
-    y = max(ay, iy) + 40
-
-    # --- contributions ----------------------------------------------------
-    body.append(prompt("gh pr list --merged --author @me", y))
-    y += 34
-    merged = [r for r in rows if r["merged"] > 0]
-    top = max((r["merged"] for r in merged), default=1)
-    bar_x = x + 430
-    for r in merged:
-        repo = r["repo"]
-        shown = repo if len(repo) <= 30 else repo[:29] + "\u2026"
-        body.append(
-            f'<tspan x="{x}" y="{y:.0f}" font-size="13.5px" fill="{p["text"]}">{shown}</tspan>'
-        )
-        body.append(
-            f'<tspan x="{bar_x - 26}" y="{y:.0f}" font-size="13.5px" fill="{p["muted"]}" '
-            f'text-anchor="end">{fmt_stars(r["stars"])} \u2605</tspan>'
-        )
-        w = max(6, round(230 * r["merged"] / top))
-        bars.append(
-            f'<rect x="{bar_x}" y="{y - 11:.0f}" width="{w}" height="13" rx="3" '
-            f'fill="{p["accent"]}" opacity="0.85"/>'
-        )
-        body.append(
-            f'<tspan x="{bar_x + w + 10}" y="{y:.0f}" font-size="13.5px" '
-            f'fill="{p["accent"]}" font-weight="bold">{r["merged"]}</tspan>'
-        )
-        y += 25
-
-    y += 14
-    body.append(
-        f'<tspan x="{x}" y="{y:.0f}" font-size="13.5px">'
-        f'<tspan fill="{p["text"]}">{total} merged</tspan>'
-        f'<tspan fill="{p["muted"]}"> across {len(merged)} upstream projects, '
-        f'each reproduced with a failing test first</tspan></tspan>'
-    )
-    y += 34
-    body.append(
-        f'<tspan x="{x}" y="{y:.0f}" font-size="14px">'
-        f'<tspan fill="{p["accent"]}" font-weight="bold">~</tspan>'
-        f'<tspan fill="{p["muted"]}"> $ </tspan>'
-        f'<tspan fill="{p["accent"]}">\u2588</tspan></tspan>'
-    )
-    height = y + 40
 
     return f"""<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{PROFILE_W}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
-<rect width="{PROFILE_W}px" height="{height}px" fill="{p["bg"]}" rx="18"/>
-{chr(10).join(bars)}
-<text fill="{p["accent"]}" xml:space="preserve" font-size="{ASCII_FONT}px" opacity="0.9">
+<svg xmlns="http://www.w3.org/2000/svg" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+{chrome(w, h, "abhinav@github: ~/contributions")}
+{chr(10).join(labels)}
+{chr(10).join(cells)}
+<text x="{left}" y="{h - 16}" font-size="12px" fill="{CARD_MUTED}">
+<tspan fill="{ACCENT}" font-weight="bold">{total:,}</tspan> contributions in the last year</text>
+</svg>
+"""
+
+
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def tile(x: int, y: int, w: int, h: int, label: str, value: str, sub: str, unit: str = "") -> str:
+    # A space inside the tspan renders at the small font size, so it is
+    # nearly invisible beside a 26px number. Offset explicitly instead.
+    unit_tspan = (
+        f'<tspan dx="7" font-size="13px" fill="{CARD_MUTED}">{unit}</tspan>' if unit else ""
+    )
+    return f"""<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{CARD_PANEL}" stroke="{CARD_LINE}"/>
+<text x="{x + 14}" y="{y + 22}" font-size="11px" fill="{CARD_MUTED}"><tspan fill="{ACCENT}">$</tspan> {label}</text>
+<text x="{x + 14}" y="{y + 52}" font-size="26px" font-weight="bold" fill="{CARD_TEXT}">{value}{unit_tspan}</text>
+<text x="{x + 14}" y="{y + 72}" font-size="10.5px" fill="{CARD_MUTED}">{sub}</text>"""
+
+
+def render_stats_svg(s: dict, values: dict) -> str:
+    """The numbers card: six tiles over a per-month bar chart."""
+    w = 420
+    pad, gap = 14, 10
+    tw = (w - pad * 2 - gap) // 2
+    th = 86
+    y = TITLEBAR + 14
+
+    pct = round(100 * s["active"] / s["days"]) if s["days"] else 0
+    cells = [
+        ("current streak", f'{s["current"]}', "days", "unbroken"),
+        ("longest streak", f'{s["longest"]}', "days", "best run"),
+        ("contributions", f'{s["total"]:,}', "", "in the last year"),
+        ("active days", f'{s["active"]}', f'/ {s["days"]}', f"{pct}% of the year"),
+        ("best day", f'{s["best"]}', "", s["best_date"]),
+        ("upstream PRs", f'{values["prs_merged"]}', "", f'merged · {values["prs_open"]} in review'),
+    ]
+    out = []
+    for i, (label, val, unit, sub) in enumerate(cells):
+        cx = pad + (i % 2) * (tw + gap)
+        cy = y + (i // 2) * (th + gap)
+        out.append(tile(cx, cy, tw, th, label, val, sub, unit))
+
+    chart_y = y + 3 * (th + gap)
+    ch = 150
+    out.append(
+        f'<rect x="{pad}" y="{chart_y}" width="{w - pad * 2}" height="{ch}" rx="8" '
+        f'fill="{CARD_PANEL}" stroke="{CARD_LINE}"/>'
+    )
+    out.append(
+        f'<text x="{pad + 14}" y="{chart_y + 22}" font-size="11px" fill="{CARD_MUTED}">'
+        f'<tspan fill="{ACCENT}">$</tspan> contributions / month</text>'
+    )
+    months = s["months"]
+    peak = max((n for _, n in months), default=1) or 1
+    bw = (w - pad * 2 - 36) // max(len(months), 1)
+    base = chart_y + ch - 26
+    for i, (m, n) in enumerate(months):
+        bh = max(3, round((base - chart_y - 36) * n / peak))
+        bx = pad + 18 + i * bw
+        out.append(
+            f'<rect x="{bx}" y="{base - bh}" width="{bw - 6}" height="{bh}" rx="2" fill="{ACCENT}" opacity="0.85"/>'
+        )
+        out.append(
+            f'<text x="{bx + (bw - 6) / 2:.0f}" y="{base + 14}" font-size="9px" fill="{CARD_MUTED}" '
+            f'text-anchor="middle">{MONTHS[int(m[5:7]) - 1][0]}</text>'
+        )
+    h = chart_y + ch + pad
+
+    return f"""<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+{chrome(w, h, "abhinav@github: ~/stats")}
+{chr(10).join(out)}
+</svg>
+"""
+
+
+def render_portrait_svg() -> str:
+    """The ASCII portrait, sized to sit level with the stats card."""
+    w = 420
+    art, y = [], TITLEBAR + 26
+    for r in ASCII_PORTRAIT:
+        art.append(f'<tspan x="30" y="{y:.0f}">{r}</tspan>')
+        y += 11.6
+    h = y + 44
+    return f"""<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+{chrome(w, h, "abhinav@github: ~/portrait")}
+<text fill="{ACCENT}" xml:space="preserve" font-size="10px" opacity="0.92">
 {chr(10).join(art)}
 </text>
-<text xml:space="preserve" font-size="15px" fill="{p["text"]}">
-{chr(10).join(info)}
-</text>
-<text xml:space="preserve">
-{chr(10).join(body)}
-</text>
+<text x="30" y="{h - 18}" font-size="11px" fill="{CARD_MUTED}">
+<tspan fill="{ACCENT}">$</tspan> whoami <tspan fill="{CARD_TEXT}">Abhinav Singh</tspan></text>
+</svg>
+"""
+
+
+def render_upstream_svg(rows: list[dict], total: int) -> str:
+    """Merged pull requests per upstream project, as bars."""
+    w = 860
+    merged = [r for r in rows if r["merged"] > 0]
+    peak = max((r["merged"] for r in merged), default=1)
+    x = 30
+    y = TITLEBAR + 34
+    bar_x = 430
+    out = []
+    out.append(
+        f'<text x="{x}" y="{y}" font-size="12.5px" fill="{CARD_MUTED}">'
+        f'<tspan fill="{ACCENT}">$</tspan> gh pr list --merged --author @me</text>'
+    )
+    y += 30
+    bars = []
+    for r in merged:
+        name = r["repo"] if len(r["repo"]) <= 34 else r["repo"][:33] + "\u2026"
+        out.append(f'<text x="{x}" y="{y}" font-size="12.5px" fill="{CARD_TEXT}">{name}</text>')
+        out.append(
+            f'<text x="{bar_x - 24}" y="{y}" font-size="12.5px" fill="{CARD_MUTED}" '
+            f'text-anchor="end">{fmt_stars(r["stars"])} \u2605</text>'
+        )
+        bw = max(6, round(300 * r["merged"] / peak))
+        bars.append(
+            f'<rect x="{bar_x}" y="{y - 11}" width="{bw}" height="13" rx="3" fill="{ACCENT}" opacity="0.85"/>'
+        )
+        out.append(
+            f'<text x="{bar_x + bw + 10}" y="{y}" font-size="12.5px" fill="{ACCENT}" '
+            f'font-weight="bold">{r["merged"]}</text>'
+        )
+        y += 24
+    y += 10
+    out.append(
+        f'<text x="{x}" y="{y}" font-size="12px" fill="{CARD_MUTED}">'
+        f'<tspan fill="{CARD_TEXT}" font-weight="bold">{total} merged</tspan> across '
+        f'{len(merged)} upstream projects, each reproduced with a failing test first</text>'
+    )
+    h = y + 24
+    return f"""<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+{chrome(w, h, "abhinav@github: ~/upstream")}
+{chr(10).join(bars)}
+{chr(10).join(out)}
 </svg>
 """
 
@@ -566,17 +685,30 @@ def main() -> None:
 
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     changed = False
-    for palette in ("dark", "light"):
-        profile = render_profile_svg(palette, values, repo_rows, prs_merged)
-        path = os.path.join(repo_root, f"profile-{palette}.svg")
+    cal = _graphql(token, CALENDAR_QUERY, {"login": USERNAME})["user"][
+        "contributionsCollection"
+    ]["contributionCalendar"]
+    weeks = [w["contributionDays"] for w in cal["weeks"]]
+    days = [d for w in weeks for d in w]
+    stats = calendar_stats(days)
+    print(f"calendar: {stats['total']} contributions, streak {stats['current']}, best {stats['best']}")
+
+    artifacts = {
+        "contrib-heatmap.svg": render_heatmap_svg(weeks, cal["totalContributions"]),
+        "portrait.svg": render_portrait_svg(),
+        "stats.svg": render_stats_svg(stats, values),
+        "upstream.svg": render_upstream_svg(repo_rows, prs_merged),
+    }
+    for name, svg in artifacts.items():
+        path = os.path.join(repo_root, name)
         existing = ""
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 existing = f.read()
-        if existing != profile:
+        if existing != svg:
             changed = True
         with open(path, "w", encoding="utf-8") as f:
-            f.write(profile)
+            f.write(svg)
 
     if update_readme(repo_root, repo_rows, prs_merged):
         changed = True
