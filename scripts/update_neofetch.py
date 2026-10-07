@@ -450,24 +450,46 @@ def render_stats_svg(s: dict, values: dict) -> str:
 
 
 def render_portrait_svg() -> str:
-    """The ASCII portrait, sized to sit level with the stats card."""
+    """The ASCII portrait, revealed line by line like a terminal printing it.
+
+    Each row is clipped by a rect whose width animates from zero, staggered
+    so the rows wipe in top to bottom. SMIL rather than CSS here because the
+    reveal is per-element geometry; either runs inside an <img>, neither
+    needs script.
+    """
     w = 420
-    art, y = [], TITLEBAR + 26
-    for r in ASCII_PORTRAIT:
-        art.append(f'<tspan x="30" y="{y:.0f}">{r}</tspan>')
-        y += 11.6
+    row_h = 11.6
+    y = TITLEBAR + 26
+    art, clips = [], []
+    stagger = 0.045
+
+    for i, r in enumerate(ASCII_PORTRAIT):
+        begin = i * stagger
+        clips.append(
+            f'<clipPath id="pr{i}"><rect x="28" y="{y - 9:.1f}" width="0" height="{row_h:.1f}">'
+            f'<animate attributeName="width" from="0" to="366" '
+            f'begin="{begin:.3f}s" dur="0.09s" fill="freeze"/></rect></clipPath>'
+        )
+        art.append(f'<text clip-path="url(#pr{i})" x="30" y="{y:.1f}">{r}</text>')
+        y += row_h
+
     h = y + 44
+    cursor_at = len(ASCII_PORTRAIT) * stagger
     return f"""<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{w}px" height="{h}px" font-family="'Fira Code',ui-monospace,Consolas,monospace">
+<defs>
+{chr(10).join(clips)}
+</defs>
 {chrome(w, h, "abhinav@github: ~/portrait")}
-<text fill="{ACCENT}" xml:space="preserve" font-size="10px" opacity="0.92">
+<g fill="{ACCENT}" font-size="10px" opacity="0.92">
 {chr(10).join(art)}
+</g>
+<text x="30" y="{h - 18}" font-size="11px" fill="{CARD_MUTED}" opacity="0">
+<tspan fill="{ACCENT}">$</tspan> whoami <tspan fill="{CARD_TEXT}">Abhinav Singh</tspan>
+<animate attributeName="opacity" from="0" to="1" begin="{cursor_at:.2f}s" dur="0.3s" fill="freeze"/>
 </text>
-<text x="30" y="{h - 18}" font-size="11px" fill="{CARD_MUTED}">
-<tspan fill="{ACCENT}">$</tspan> whoami <tspan fill="{CARD_TEXT}">Abhinav Singh</tspan></text>
 </svg>
 """
-
 
 def render_upstream_svg(rows: list[dict], total: int) -> str:
     """Merged pull requests per upstream project, as bars."""
