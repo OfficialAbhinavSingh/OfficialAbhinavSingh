@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="780px" height="440px" font-family="'Fira Code',Consolas,monospace">
+<rect width="780px" height="440px" fill="#14100e" rx="16"/>
+<rect x="420" y="79" width="190" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="105" width="54" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="131" width="54" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="157" width="41" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="183" width="41" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="209" width="41" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="235" width="27" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="261" width="14" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="287" width="14" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="313" width="14" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<rect x="420" y="339" width="14" height="13" rx="3" fill="#f0732d" opacity="0.85"/>
+<text xml:space="preserve" font-size="14px">
+<tspan x="24" y="34"><tspan fill="#f5efea99">$ </tspan><tspan fill="#f0732d" font-weight="bold">gh pr list --merged --author @me</tspan></tspan>
+<tspan x="24" y="60" fill="#f5efea99">----------------------------------------------------------</tspan>
+<tspan x="24" y="90"><tspan fill="#f5efea">steipete/CodexBar</tspan></tspan>
+<tspan x="370" y="90" fill="#f5efea99" text-anchor="end">22k+ ★</tspan>
+<tspan x="620" y="90" fill="#f0732d" font-weight="bold">14</tspan>
+<tspan x="24" y="116"><tspan fill="#f5efea">mem0ai/mem0</tspan></tspan>
+<tspan x="370" y="116" fill="#f5efea99" text-anchor="end">66k+ ★</tspan>
+<tspan x="484" y="116" fill="#f0732d" font-weight="bold">4</tspan>
+<tspan x="24" y="142"><tspan fill="#f5efea">sktime/sktime</tspan></tspan>
+<tspan x="370" y="142" fill="#f5efea99" text-anchor="end">10k+ ★</tspan>
+<tspan x="484" y="142" fill="#f0732d" font-weight="bold">4</tspan>
+<tspan x="24" y="168"><tspan fill="#f5efea">CodeGraphContext/CodeGraphC…</tspan></tspan>
+<tspan x="370" y="168" fill="#f5efea99" text-anchor="end">4.2k+ ★</tspan>
+<tspan x="471" y="168" fill="#f0732d" font-weight="bold">3</tspan>
+<tspan x="24" y="194"><tspan fill="#f5efea">steipete/oracle</tspan></tspan>
+<tspan x="370" y="194" fill="#f5efea99" text-anchor="end">4k+ ★</tspan>
+<tspan x="471" y="194" fill="#f0732d" font-weight="bold">3</tspan>
+<tspan x="24" y="220"><tspan fill="#f5efea">Ritesh381/Scaler-extension</tspan></tspan>
+<tspan x="370" y="220" fill="#f5efea99" text-anchor="end">9 ★</tspan>
+<tspan x="471" y="220" fill="#f0732d" font-weight="bold">3</tspan>
+<tspan x="24" y="246"><tspan fill="#f5efea">huggingface/OpenEnv</tspan></tspan>
+<tspan x="370" y="246" fill="#f5efea99" text-anchor="end">2.7k+ ★</tspan>
+<tspan x="457" y="246" fill="#f0732d" font-weight="bold">2</tspan>
+<tspan x="24" y="272"><tspan fill="#f5efea">modelcontextprotocol/confor…</tspan></tspan>
+<tspan x="370" y="272" fill="#f5efea99" text-anchor="end">129 ★</tspan>
+<tspan x="444" y="272" fill="#f0732d" font-weight="bold">1</tspan>
+<tspan x="24" y="298"><tspan fill="#f5efea">sailingsam/tryjarvis</tspan></tspan>
+<tspan x="370" y="298" fill="#f5efea99" text-anchor="end">14 ★</tspan>
+<tspan x="444" y="298" fill="#f0732d" font-weight="bold">1</tspan>
+<tspan x="24" y="324"><tspan fill="#f5efea">Litica-AI/litica-sdk</tspan></tspan>
+<tspan x="370" y="324" fill="#f5efea99" text-anchor="end">6 ★</tspan>
+<tspan x="444" y="324" fill="#f0732d" font-weight="bold">1</tspan>
+<tspan x="24" y="350"><tspan fill="#f5efea">ShivenduShivu/MemoryLayer_f…</tspan></tspan>
+<tspan x="370" y="350" fill="#f5efea99" text-anchor="end">0 ★</tspan>
+<tspan x="444" y="350" fill="#f0732d" font-weight="bold">1</tspan>
+<tspan x="24" y="384" fill="#f5efea99">----------------------------------------------------------</tspan>
+<tspan x="24" y="410"><tspan fill="#f5efea">37 merged</tspan><tspan fill="#f5efea99"> across 11 upstream projects, every one reproduced with a failing test first</tspan></tspan>
+</text>
+</svg>

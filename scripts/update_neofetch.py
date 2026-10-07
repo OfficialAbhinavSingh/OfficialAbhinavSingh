@@ -219,6 +219,81 @@ def fmt_stars(n: int) -> str:
     return str(n)
 
 
+def render_contrib_svg(palette_name: str, rows: list[dict], total: int) -> str:
+    """The upstream contributions panel, drawn in the same terminal language
+    as the neofetch card.
+
+    A markdown table renders as a bordered documentation grid, which reads
+    nothing like the card above it. Drawing it as an SVG panel keeps one
+    visual language down the whole README, and the bar lengths make the
+    distribution of work legible at a glance in a way a column of digits
+    is not.
+    """
+    p = PALETTES[palette_name]
+    merged = [r for r in rows if r["merged"] > 0]
+    top = max((r["merged"] for r in merged), default=1)
+
+    name_x, bar_x = 24, 420
+    lh, pad_top = 26, 34
+    y = pad_top
+
+    out = []
+    out.append(
+        f'<tspan x="{name_x}" y="{y}">'
+        f'<tspan fill="{p["muted"]}">$ </tspan>'
+        f'<tspan fill="{p["accent"]}" font-weight="bold">gh pr list --merged --author @me</tspan>'
+        f'</tspan>'
+    )
+    y += lh
+    out.append(f'<tspan x="{name_x}" y="{y}" fill="{p["muted"]}">{"-" * 58}</tspan>')
+    y += lh + 4
+
+    bars = []
+    for r in merged:
+        repo = r["repo"]
+        shown = repo if len(repo) <= 28 else repo[:27] + "\u2026"
+        out.append(
+            f'<tspan x="{name_x}" y="{y}">'
+            f'<tspan fill="{p["text"]}">{shown}</tspan>'
+            f'</tspan>'
+        )
+        out.append(
+            f'<tspan x="{bar_x - 50}" y="{y}" fill="{p["muted"]}" text-anchor="end">'
+            f'{fmt_stars(r["stars"])} \u2605</tspan>'
+        )
+        width = max(6, round(190 * r["merged"] / top))
+        bars.append(
+            f'<rect x="{bar_x}" y="{y - 11}" width="{width}" height="13" '
+            f'rx="3" fill="{p["accent"]}" opacity="0.85"/>'
+        )
+        out.append(
+            f'<tspan x="{bar_x + width + 10}" y="{y}" fill="{p["accent"]}" '
+            f'font-weight="bold">{r["merged"]}</tspan>'
+        )
+        y += lh
+
+    y += 8
+    out.append(f'<tspan x="{name_x}" y="{y}" fill="{p["muted"]}">{"-" * 58}</tspan>')
+    y += lh
+    out.append(
+        f'<tspan x="{name_x}" y="{y}">'
+        f'<tspan fill="{p["text"]}">{total} merged</tspan>'
+        f'<tspan fill="{p["muted"]}"> across {len(merged)} upstream projects, '
+        f'every one reproduced with a failing test first</tspan></tspan>'
+    )
+    height = y + 30
+
+    return f"""<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{CARD_WIDTH}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
+<rect width="{CARD_WIDTH}px" height="{height}px" fill="{p["bg"]}" rx="16"/>
+{chr(10).join(bars)}
+<text xml:space="preserve" font-size="14px">
+{chr(10).join(out)}
+</text>
+</svg>
+"""
+
+
 def build_headline(rows: list[dict], total: int) -> str:
     """The centred one-line summary above the neofetch card."""
     merged_rows = [r for r in rows if r["merged"] > 0]
@@ -238,18 +313,21 @@ def build_headline(rows: list[dict], total: int) -> str:
 
 
 def build_table(rows: list[dict]) -> str:
-    """The Open-Source Contributions table body."""
-    lines = ["| Repo | Stars | PRs merged |", "|---|---|---|"]
-    for r in rows:
-        if r["merged"] == 0:
-            continue
-        repo = r["repo"]
-        query = f"https://github.com/{repo}/pulls?q=is%3Apr+is%3Amerged+author%3A{USERNAME}"
-        lines.append(
-            f"| [{repo}](https://github.com/{repo}) | {fmt_stars(r['stars'])} "
-            f"| [{r['merged']}]({query}) |"
-        )
-    return "\n".join(lines)
+    """The contributions block: a <picture> pointing at the generated panels.
+
+    This stays inside the generated markers so the table can never disagree
+    with the card, which is the whole reason the single list exists.
+    """
+    base = f"https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/main"
+    alt = "Upstream pull requests merged, by project"
+    return (
+        '<p align="center">\n'
+        "  <picture>\n"
+        f'    <source media="(prefers-color-scheme: dark)" srcset="{base}/contributions-dark.svg">\n'
+        f'    <img alt="{alt}" src="{base}/contributions-light.svg">\n'
+        "  </picture>\n"
+        "</p>"
+    )
 
 
 def replace_block(text: str, name: str, body: str) -> str:
@@ -501,6 +579,17 @@ def main() -> None:
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     changed = False
     for palette in ("dark", "light"):
+        contrib = render_contrib_svg(palette, repo_rows, prs_merged)
+        cpath = os.path.join(repo_root, f"contributions-{palette}.svg")
+        cold = ""
+        if os.path.exists(cpath):
+            with open(cpath, "r", encoding="utf-8") as f:
+                cold = f.read()
+        if cold != contrib:
+            changed = True
+        with open(cpath, "w", encoding="utf-8") as f:
+            f.write(contrib)
+
         svg = render_svg(palette, values)
         path = os.path.join(repo_root, f"neofetch-{palette}.svg")
         existing = ""

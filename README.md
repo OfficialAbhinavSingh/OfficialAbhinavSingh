@@ -35,19 +35,12 @@ fix that makes the test pass. Most of these are bugs the maintainers did not kno
 had.
 
 <!--START:upstream-table-->
-| Repo | Stars | PRs merged |
-|---|---|---|
-| [steipete/CodexBar](https://github.com/steipete/CodexBar) | 22k+ | [14](https://github.com/steipete/CodexBar/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 66k+ | [4](https://github.com/mem0ai/mem0/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [sktime/sktime](https://github.com/sktime/sktime) | 10k+ | [4](https://github.com/sktime/sktime/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [CodeGraphContext/CodeGraphContext](https://github.com/CodeGraphContext/CodeGraphContext) | 4.2k+ | [3](https://github.com/CodeGraphContext/CodeGraphContext/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [steipete/oracle](https://github.com/steipete/oracle) | 4k+ | [3](https://github.com/steipete/oracle/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [Ritesh381/Scaler-extension](https://github.com/Ritesh381/Scaler-extension) | 9 | [3](https://github.com/Ritesh381/Scaler-extension/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | 2.7k+ | [2](https://github.com/huggingface/OpenEnv/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [modelcontextprotocol/conformance](https://github.com/modelcontextprotocol/conformance) | 129 | [1](https://github.com/modelcontextprotocol/conformance/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [sailingsam/tryjarvis](https://github.com/sailingsam/tryjarvis) | 14 | [1](https://github.com/sailingsam/tryjarvis/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [Litica-AI/litica-sdk](https://github.com/Litica-AI/litica-sdk) | 6 | [1](https://github.com/Litica-AI/litica-sdk/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
-| [ShivenduShivu/MemoryLayer_for_Agents](https://github.com/ShivenduShivu/MemoryLayer_for_Agents) | 0 | [1](https://github.com/ShivenduShivu/MemoryLayer_for_Agents/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh) |
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/contributions-dark.svg">
+    <img alt="Upstream pull requests merged, by project" src="https://raw.githubusercontent.com/OfficialAbhinavSingh/OfficialAbhinavSingh/main/contributions-light.svg">
+  </picture>
+</p>
 <!--END:upstream-table-->
 
 <sub>Counts and stars above are generated from the GitHub API on every run, so they cannot drift from reality.</sub>
@@ -71,12 +64,8 @@ had.
 
 ## Stack
 
-<samp>
-Python · TypeScript · Swift · Rust · Go<br>
-PyTorch · FastAPI · React · Three.js<br>
-Docker · PostgreSQL · DuckDB · Redis · Celery<br>
-Linux · Hyprland · Neovim · Git
-</samp>
+`Python` `TypeScript` `Swift` `Rust` · `PyTorch` `FastAPI` `React` `Three.js`
+`Docker` `PostgreSQL` `DuckDB` `Redis` `Celery` · `Arch Linux` `Hyprland` `Neovim`
 
 ## Recent Activity
 
