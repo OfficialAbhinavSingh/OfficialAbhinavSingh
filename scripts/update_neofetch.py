@@ -219,144 +219,180 @@ def fmt_stars(n: int) -> str:
     return str(n)
 
 
-def render_header_svg(palette_name: str) -> str:
-    """The title banner.
+PROFILE_W = 880
 
-    Deliberately not a second neofetch card: that block is system output,
-    this one is a title. It carries the same palette and mono face so the
-    page reads as one session, but stays typographic rather than tabular.
+
+def render_profile_svg(palette_name: str, values: dict, rows: list[dict], total: int) -> str:
+    """The whole profile as one terminal session.
+
+    Previously this was three separate images with markdown headings in
+    between, which meant the page read as documentation interrupted by art.
+    One panel, three prompts, one scrollback: the sections are separated by
+    the commands that produced them rather than by <h2> rules.
     """
     p = PALETTES[palette_name]
-    w, h = CARD_WIDTH, 150
+    x = 42
+    y = 56
+    body, bars = [], []
 
-    return f"""<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{w}px" height="{h}px" font-family="'Fira Code',Consolas,monospace">
-<rect width="{w}px" height="{h}px" fill="{p["bg"]}" rx="16"/>
-<rect x="40" y="46" width="4" height="58" rx="2" fill="{p["accent"]}"/>
-<text xml:space="preserve">
-  <tspan x="40" y="36" font-size="13px" fill="{p["muted"]}">~ $ whoami</tspan>
-  <tspan x="60" y="80" font-size="34px" font-weight="bold" fill="{p["text"]}">Abhinav Singh</tspan>
-  <tspan x="60" y="104" font-size="13.5px" fill="{p["accent"]}">AI/ML and agentic systems</tspan>
-  <tspan x="60" y="128" font-size="13.5px" fill="{p["muted"]}">open source contributor \u00b7 CS undergrad \u00b7 Arch Linux + Hyprland</tspan>
-</text>
-</svg>
-"""
+    def prompt(cmd: str, yy: float) -> str:
+        return (
+            f'<tspan x="{x}" y="{yy:.0f}" font-size="14px">'
+            f'<tspan fill="{p["accent"]}" font-weight="bold">~</tspan>'
+            f'<tspan fill="{p["muted"]}"> $ </tspan>'
+            f'<tspan fill="{p["text"]}">{cmd}</tspan></tspan>'
+        )
 
+    # --- whoami -----------------------------------------------------------
+    body.append(prompt("whoami", y))
+    y += 46
+    body.append(
+        f'<tspan x="{x}" y="{y:.0f}" font-size="36px" font-weight="bold" '
+        f'fill="{p["text"]}">Abhinav Singh</tspan>'
+    )
+    y += 26
+    body.append(
+        f'<tspan x="{x}" y="{y:.0f}" font-size="14px" fill="{p["accent"]}">'
+        f'AI/ML and agentic systems</tspan>'
+    )
+    y += 22
+    body.append(
+        f'<tspan x="{x}" y="{y:.0f}" font-size="13px" fill="{p["muted"]}">'
+        f'open source contributor \u00b7 CS undergrad \u00b7 Arch Linux + Hyprland</tspan>'
+    )
 
-def render_contrib_svg(palette_name: str, rows: list[dict], total: int) -> str:
-    """The upstream contributions panel, drawn in the same terminal language
-    as the neofetch card.
+    # --- neofetch ---------------------------------------------------------
+    y += 54
+    body.append(prompt("neofetch", y))
+    y += 30
+    art_top = y
+    ascii_x = x + 4
+    art = []
+    ay = art_top
+    for r in ASCII_PORTRAIT:
+        art.append(f'<tspan x="{ascii_x}" y="{ay:.0f}">{r}</tspan>')
+        ay += ASCII_LH
 
-    A markdown table renders as a bordered documentation grid, which reads
-    nothing like the card above it. Drawing it as an SVG panel keeps one
-    visual language down the whole README, and the bar lengths make the
-    distribution of work legible at a glance in a way a column of digits
-    is not.
-    """
-    p = PALETTES[palette_name]
+    info_x = x + 330
+    iy = art_top + 14
+    info = []
+    info.append(
+        f'<tspan x="{info_x}" y="{iy:.0f}" fill="{p["accent"]}" font-weight="bold">'
+        f'abhinav@github</tspan>'
+    )
+    iy += 24
+    info.append(f'<tspan x="{info_x}" y="{iy:.0f}" fill="{p["muted"]}">{"-" * 28}</tspan>')
+    iy += 24
+    for label, value in FIELDS_TEMPLATE:
+        info.append(row(info_x, iy, seg(p, label, value)))
+        iy += 24
+    iy += 8
+    info.append(row(info_x, iy, seg(p, "Member since", values["member_since"])))
+    iy += 24
+    info.append(
+        row(info_x, iy, seg(p, "Repos", values["repos"])
+            + f'<tspan fill="{p["muted"]}"> | </tspan>'
+            + seg(p, "Stars", values["stars"])
+            + f'<tspan fill="{p["muted"]}"> | </tspan>'
+            + seg(p, "Followers", values["followers"]))
+    )
+    iy += 24
+    info.append(row(info_x, iy, seg(p, "Commits (yr)", values["commits"])))
+    iy += 24
+    info.append(row(info_x, iy, seg(p, "Top Language", values["top_language"])))
+
+    y = max(ay, iy) + 40
+
+    # --- contributions ----------------------------------------------------
+    body.append(prompt("gh pr list --merged --author @me", y))
+    y += 34
     merged = [r for r in rows if r["merged"] > 0]
     top = max((r["merged"] for r in merged), default=1)
-
-    name_x, bar_x = 24, 420
-    lh, pad_top = 26, 34
-    y = pad_top
-
-    out = []
-    out.append(
-        f'<tspan x="{name_x}" y="{y}">'
-        f'<tspan fill="{p["muted"]}">$ </tspan>'
-        f'<tspan fill="{p["accent"]}" font-weight="bold">gh pr list --merged --author @me</tspan>'
-        f'</tspan>'
-    )
-    y += lh
-    out.append(f'<tspan x="{name_x}" y="{y}" fill="{p["muted"]}">{"-" * 58}</tspan>')
-    y += lh + 4
-
-    bars = []
+    bar_x = x + 430
     for r in merged:
         repo = r["repo"]
-        shown = repo if len(repo) <= 28 else repo[:27] + "\u2026"
-        out.append(
-            f'<tspan x="{name_x}" y="{y}">'
-            f'<tspan fill="{p["text"]}">{shown}</tspan>'
-            f'</tspan>'
+        shown = repo if len(repo) <= 30 else repo[:29] + "\u2026"
+        body.append(
+            f'<tspan x="{x}" y="{y:.0f}" font-size="13.5px" fill="{p["text"]}">{shown}</tspan>'
         )
-        out.append(
-            f'<tspan x="{bar_x - 50}" y="{y}" fill="{p["muted"]}" text-anchor="end">'
-            f'{fmt_stars(r["stars"])} \u2605</tspan>'
+        body.append(
+            f'<tspan x="{bar_x - 26}" y="{y:.0f}" font-size="13.5px" fill="{p["muted"]}" '
+            f'text-anchor="end">{fmt_stars(r["stars"])} \u2605</tspan>'
         )
-        width = max(6, round(190 * r["merged"] / top))
+        w = max(6, round(230 * r["merged"] / top))
         bars.append(
-            f'<rect x="{bar_x}" y="{y - 11}" width="{width}" height="13" '
-            f'rx="3" fill="{p["accent"]}" opacity="0.85"/>'
+            f'<rect x="{bar_x}" y="{y - 11:.0f}" width="{w}" height="13" rx="3" '
+            f'fill="{p["accent"]}" opacity="0.85"/>'
         )
-        out.append(
-            f'<tspan x="{bar_x + width + 10}" y="{y}" fill="{p["accent"]}" '
-            f'font-weight="bold">{r["merged"]}</tspan>'
+        body.append(
+            f'<tspan x="{bar_x + w + 10}" y="{y:.0f}" font-size="13.5px" '
+            f'fill="{p["accent"]}" font-weight="bold">{r["merged"]}</tspan>'
         )
-        y += lh
+        y += 25
 
-    y += 8
-    out.append(f'<tspan x="{name_x}" y="{y}" fill="{p["muted"]}">{"-" * 58}</tspan>')
-    y += lh
-    out.append(
-        f'<tspan x="{name_x}" y="{y}">'
+    y += 14
+    body.append(
+        f'<tspan x="{x}" y="{y:.0f}" font-size="13.5px">'
         f'<tspan fill="{p["text"]}">{total} merged</tspan>'
         f'<tspan fill="{p["muted"]}"> across {len(merged)} upstream projects, '
-        f'every one reproduced with a failing test first</tspan></tspan>'
+        f'each reproduced with a failing test first</tspan></tspan>'
     )
-    height = y + 30
+    y += 34
+    body.append(
+        f'<tspan x="{x}" y="{y:.0f}" font-size="14px">'
+        f'<tspan fill="{p["accent"]}" font-weight="bold">~</tspan>'
+        f'<tspan fill="{p["muted"]}"> $ </tspan>'
+        f'<tspan fill="{p["accent"]}">\u2588</tspan></tspan>'
+    )
+    height = y + 40
 
     return f"""<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{CARD_WIDTH}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
-<rect width="{CARD_WIDTH}px" height="{height}px" fill="{p["bg"]}" rx="16"/>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{PROFILE_W}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
+<rect width="{PROFILE_W}px" height="{height}px" fill="{p["bg"]}" rx="18"/>
 {chr(10).join(bars)}
-<text xml:space="preserve" font-size="14px">
-{chr(10).join(out)}
+<text fill="{p["accent"]}" xml:space="preserve" font-size="{ASCII_FONT}px" opacity="0.9">
+{chr(10).join(art)}
+</text>
+<text xml:space="preserve" font-size="15px" fill="{p["text"]}">
+{chr(10).join(info)}
+</text>
+<text xml:space="preserve">
+{chr(10).join(body)}
 </text>
 </svg>
 """
 
 
 def build_headline(rows: list[dict], total: int) -> str:
-    """The centred one-line summary above the neofetch card."""
-    merged_rows = [r for r in rows if r["merged"] > 0]
-    top = merged_rows[:4]
-    named = " · ".join(
-        f'<a href="https://github.com/{r["repo"]}">{r["repo"]}</a> '
-        f'({fmt_stars(r["stars"])} ⭐, {r["merged"]})'
+    """The one linked line under the panel.
+
+    The panel shows the same numbers but is a flat image, so this exists to
+    carry the links a reader actually wants to click.
+    """
+    merged = [r for r in rows if r["merged"] > 0]
+    top = merged[:5]
+    named = " \u00b7 ".join(
+        f'<a href="https://github.com/{r["repo"]}">{r["repo"].split("/")[-1]}</a> {r["merged"]}'
         for r in top
     )
-    rest = len(merged_rows) - len(top)
-    more = f" · +{rest} more" if rest > 0 else ""
+    rest = len(merged) - len(top)
+    more = f' \u00b7 +{rest} more' if rest > 0 else ""
+    allpr = f"https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3A{USERNAME}"
     return (
-        f"  🏆 <b>{total} PRs merged upstream</b> — {named}{more}. "
-        "Each one found by reading the code, reproduced with a failing test, "
-        'then fixed. <a href="#open-source">See the list →</a>'
-    )
-
-
-def build_table(rows: list[dict]) -> str:
-    """The contributions block: a <picture> pointing at the generated panels.
-
-    This stays inside the generated markers so the table can never disagree
-    with the card, which is the whole reason the single list exists.
-    """
-    base = f"https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/main"
-    alt = "Upstream pull requests merged, by project"
-    return (
-        '<p align="center">\n'
-        "  <picture>\n"
-        f'    <source media="(prefers-color-scheme: dark)" srcset="{base}/contributions-dark.svg">\n'
-        f'    <img alt="{alt}" src="{base}/contributions-light.svg">\n'
-        "  </picture>\n"
-        "</p>"
+        f'  <samp>{named}{more}</samp><br>\n'
+        f'  <sub><a href="{allpr}">browse all {total} merged pull requests \u2192</a></sub>'
     )
 
 
 def replace_block(text: str, name: str, body: str) -> str:
-    """Swap the content between <!--START:name--> and <!--END:name-->."""
+    """Swap the content between <!--START:name--> and <!--END:name-->.
+
+    A missing block is not an error: sections get retired from the README
+    and the generator should not start failing the workflow when one does.
+    """
     start_tag, end_tag = f"<!--START:{name}-->", f"<!--END:{name}-->"
+    if start_tag not in text or end_tag not in text:
+        return text
     start, end = text.index(start_tag), text.index(end_tag)
     return text[: start + len(start_tag)] + "\n" + body + "\n" + text[end:]
 
@@ -367,7 +403,6 @@ def update_readme(repo_root: str, rows: list[dict], total: int) -> bool:
     with open(path, "r", encoding="utf-8") as f:
         before = f.read()
     after = replace_block(before, "upstream-headline", build_headline(rows, total))
-    after = replace_block(after, "upstream-table", build_table(rows))
     if after != before:
         with open(path, "w", encoding="utf-8") as f:
             f.write(after)
@@ -469,77 +504,6 @@ def row(x: int, y: float, inner: str) -> str:
     return f'<tspan x="{x}" y="{y:.0f}">{inner}</tspan>'
 
 
-def render_svg(palette_name: str, values: dict) -> str:
-    p = PALETTES[palette_name]
-    lines = []
-    y = TOP_PAD
-    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["accent"]}" font-weight="bold">abhinav@github</tspan>')
-    y += TEXT_LH
-    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
-    y += TEXT_LH
-
-    for label, value in FIELDS_TEMPLATE:
-        lines.append(row(LEFT_TEXT_X, y, seg(p, label, value)))
-        y += TEXT_LH
-
-    y += TEXT_LH * 0.3
-    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
-    y += TEXT_LH
-    lines.append(row(LEFT_TEXT_X, y, seg(p, "Member since", values["member_since"])))
-    y += TEXT_LH
-
-    y += TEXT_LH * 0.3
-    lines.append(f'<tspan x="{LEFT_TEXT_X}" y="{y:.0f}" fill="{p["muted"]}">{DIVIDER}</tspan>')
-    y += TEXT_LH
-    repos_line = (
-        seg(p, "Repos", values["repos"])
-        + f'<tspan fill="{p["muted"]}"> {{</tspan>'
-        + seg(p, "Contributed", values["contributed"])
-        + f'<tspan fill="{p["muted"]}">}} | </tspan>'
-        + seg(p, "Stars", values["stars"])
-    )
-    lines.append(row(LEFT_TEXT_X, y, repos_line))
-    y += TEXT_LH
-    commits_line = (
-        seg(p, "Commits (past yr)", values["commits"])
-        + f'<tspan fill="{p["muted"]}"> | </tspan>'
-        + seg(p, "Followers", values["followers"])
-    )
-    lines.append(row(LEFT_TEXT_X, y, commits_line))
-    y += TEXT_LH
-    lines.append(row(LEFT_TEXT_X, y, seg(p, "Top Language", values["top_language"])))
-    y += TEXT_LH
-    upstream_line = (
-        seg(p, "Upstream PRs", f'{values["prs_merged"]} merged')
-        + f'<tspan fill="{p["muted"]}"> | </tspan>'
-        + seg(p, "In review", values["prs_open"])
-    )
-    lines.append(row(LEFT_TEXT_X, y, upstream_line))
-    y += TEXT_LH
-
-    text_height = y + TOP_PAD * 0.6
-    ascii_height = TOP_PAD + len(ASCII_PORTRAIT) * ASCII_LH + TOP_PAD * 0.6
-    height = int(max(text_height, ascii_height))
-
-    ascii_lines = []
-    ay = TOP_PAD
-    for r in ASCII_PORTRAIT:
-        ascii_lines.append(f'<tspan x="{LEFT_ASCII_X}" y="{ay}">{r}</tspan>')
-        ay += ASCII_LH
-
-    return f'''<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{CARD_WIDTH}px" height="{height}px" font-family="'Fira Code',Consolas,monospace">
-<rect width="{CARD_WIDTH}px" height="{height}px" fill="{p["bg"]}" rx="16"/>
-<text fill="{p["accent"]}" xml:space="preserve" font-size="{ASCII_FONT}px">
-{chr(10).join(ascii_lines)}
-</text>
-<text fill="{p["text"]}" xml:space="preserve" font-size="{TEXT_FONT}px">
-{chr(10).join(lines)}
-</text>
-</svg>
-'''
-
-
 def main() -> None:
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
@@ -603,38 +567,16 @@ def main() -> None:
     repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     changed = False
     for palette in ("dark", "light"):
-        header = render_header_svg(palette)
-        hpath = os.path.join(repo_root, f"header-{palette}.svg")
-        hold = ""
-        if os.path.exists(hpath):
-            with open(hpath, "r", encoding="utf-8") as f:
-                hold = f.read()
-        if hold != header:
-            changed = True
-        with open(hpath, "w", encoding="utf-8") as f:
-            f.write(header)
-
-        contrib = render_contrib_svg(palette, repo_rows, prs_merged)
-        cpath = os.path.join(repo_root, f"contributions-{palette}.svg")
-        cold = ""
-        if os.path.exists(cpath):
-            with open(cpath, "r", encoding="utf-8") as f:
-                cold = f.read()
-        if cold != contrib:
-            changed = True
-        with open(cpath, "w", encoding="utf-8") as f:
-            f.write(contrib)
-
-        svg = render_svg(palette, values)
-        path = os.path.join(repo_root, f"neofetch-{palette}.svg")
+        profile = render_profile_svg(palette, values, repo_rows, prs_merged)
+        path = os.path.join(repo_root, f"profile-{palette}.svg")
         existing = ""
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 existing = f.read()
-        if existing != svg:
+        if existing != profile:
             changed = True
         with open(path, "w", encoding="utf-8") as f:
-            f.write(svg)
+            f.write(profile)
 
     if update_readme(repo_root, repo_rows, prs_merged):
         changed = True
