@@ -398,8 +398,9 @@
 <rect class="c g" x="852" y="150" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.452s"/>
 <rect class="c g" x="868" y="54" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.456s"/>
 <rect class="c g" x="868" y="70" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.460s"/>
-<rect class="c" x="868" y="86" width="13" height="13" rx="2.5" fill="#161b22" style="animation-delay:1.464s"/>
+<rect class="c g" x="868" y="86" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.464s"/>
 <rect class="c g" x="868" y="102" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.468s"/>
+<rect class="c" x="868" y="118" width="13" height="13" rx="2.5" fill="#161b22" style="animation-delay:1.472s"/>
 <text class="lbl" x="722" y="200">Less</text>
 <rect x="756" y="189" width="13" height="13" rx="2.5" fill="#161b22"/>
 <rect x="772" y="189" width="13" height="13" rx="2.5" fill="#5b2d14"/>
@@ -408,5 +409,5 @@
 <rect x="820" y="189" width="13" height="13" rx="2.5" fill="#f0732d"/>
 <text class="lbl" x="840" y="200">More</text>
 <text x="36" y="200" font-size="12px" fill="#8b949e">
-<tspan fill="#f0732d" font-weight="bold">1,560</tspan> contributions in the last year</text>
+<tspan fill="#f0732d" font-weight="bold">1,574</tspan> contributions in the last year</text>
 </svg>
