@@ -27,8 +27,8 @@
 <img src="./upstream.svg" width="860" alt="Pull requests merged into upstream open source projects" />
 
 <!--START:upstream-headline-->
-  <samp><a href="https://github.com/steipete/CodexBar">CodexBar</a> 14 · <a href="https://github.com/mem0ai/mem0">mem0</a> 4 · <a href="https://github.com/sktime/sktime">sktime</a> 4 · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext</a> 3 · <a href="https://github.com/steipete/oracle">oracle</a> 3 · +6 more</samp><br>
-  <sub><a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh">browse all 37 merged pull requests →</a></sub>
+  <samp><a href="https://github.com/steipete/CodexBar">CodexBar</a> 14 · <a href="https://github.com/mem0ai/mem0">mem0</a> 4 · <a href="https://github.com/sktime/sktime">sktime</a> 4 · <a href="https://github.com/CodeGraphContext/CodeGraphContext">CodeGraphContext</a> 3 · <a href="https://github.com/steipete/oracle">oracle</a> 3 · +5 more</samp><br>
+  <sub><a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3AOfficialAbhinavSingh">browse all 35 merged pull requests →</a></sub>
 <!--END:upstream-headline-->
 
 <br>
