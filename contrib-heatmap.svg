@@ -399,6 +399,7 @@
 <rect class="c g" x="868" y="54" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.456s"/>
 <rect class="c g" x="868" y="70" width="13" height="13" rx="2.5" fill="#5b2d14" style="animation-delay:1.460s"/>
 <rect class="c" x="868" y="86" width="13" height="13" rx="2.5" fill="#161b22" style="animation-delay:1.464s"/>
+<rect class="c" x="868" y="102" width="13" height="13" rx="2.5" fill="#161b22" style="animation-delay:1.468s"/>
 <text class="lbl" x="722" y="200">Less</text>
 <rect x="756" y="189" width="13" height="13" rx="2.5" fill="#161b22"/>
 <rect x="772" y="189" width="13" height="13" rx="2.5" fill="#5b2d14"/>
