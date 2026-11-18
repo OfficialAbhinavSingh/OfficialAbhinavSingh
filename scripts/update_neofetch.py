@@ -103,7 +103,7 @@ UPSTREAM_REPOS = [
     "CodeGraphContext/CodeGraphContext",
     "Ritesh381/Scaler-extension",
     "modelcontextprotocol/conformance",
-    "huggingface/OpenEnv",
+    "openenv/OpenEnv",
     "Litica-AI/litica-sdk",
     "ShivenduShivu/MemoryLayer_for_Agents",
     # Open PRs only so far — they contribute 0 to the merged count, but keeping
